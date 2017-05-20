@@ -4,5 +4,9 @@
 
       node class-exercises.js
 */
+// This is my first program 
 
-console.log('Hello World');
+
+
+console.log('Hola Mundo');
+console.log('en este mundo todo es felicidad');
