@@ -13,7 +13,7 @@ var string_result = "";
 function shortcut(string) {
     var string_size = string.length;
     for (var i = 0; i < string_size; i++) {
-        if (!((string[i] == "o") || (string[i] == "e") || (string[i] == "a") || (string[i] == "u") || (string[i] == "i"))) {
+        if (!((string[i] === "o") || (string[i] === "e") || (string[i] === "a") || (string[i] === "u") || (string[i] === "i"))) {
             string_result += string[i];
 
         }

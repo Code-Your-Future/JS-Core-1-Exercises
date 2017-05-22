@@ -19,8 +19,8 @@ var array_result = [];
 function removeVowels(alphabet) {
     var array_size = alphabet.length;
     for (var i = 0; i < array_size; i++) {
-        if (!((alphabet[i] == "o") || (alphabet[i] == "e") || (alphabet[i] == "a") || (alphabet[i] == "u") || (alphabet[i] == "i")
-            || (alphabet[i] == "O") || (alphabet[i] == "E") || (alphabet[i] == "A") || (alphabet[i] == "U") || (alphabet[i] == "I"))) {
+        if (!((alphabet[i] === "o") || (alphabet[i] === "e") || (alphabet[i] === "a") || (alphabet[i] === "u") || (alphabet[i] === "i")
+            || (alphabet[i] === "O") || (alphabet[i] === "E") || (alphabet[i] === "A") || (alphabet[i] === "U") || (alphabet[i] === "I"))) {
             array_result.push(alphabet[i]);
 
         }

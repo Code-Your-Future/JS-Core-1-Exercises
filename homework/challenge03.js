@@ -25,7 +25,7 @@ var needle_pos = 0;
 function findNeedle(array) {
     var array_size = array.length;
     for (var i = 0; i < array_size; i++) {
-        if (array[i] == "needle") {
+        if (array[i] === "needle") {
             needle_pos = i;
             console.log(result + i);
             is_result = true;
