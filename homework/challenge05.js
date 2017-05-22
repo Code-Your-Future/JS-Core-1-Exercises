@@ -12,19 +12,17 @@ stringy(5) // --> '10101'
 The size will always be positive and will only use whole numbers.
 */
 
-var alter_fact = true;
+
 var warn = "Please enter postive number without floating point"
 var result = "";
 function stringy(size) {
     if (size > 0 && size != "" && size % 1 === 0) {
         for (var i = 1; i <= size; i++) {
-            if (alter_fact) {
-                result += "1";
-                alter_fact = false;
+            if (i%2===1) {
+                result += "1";   
             }
-            else if (!alter_fact) {
-                result += "0";
-                alter_fact = true;
+            else if (i%2===0) {
+                result += "0"; 
             }
         }
         console.log(result);
