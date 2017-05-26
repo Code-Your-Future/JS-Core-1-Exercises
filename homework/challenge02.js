@@ -21,3 +21,17 @@ Counting to 15 should look like this:
 'FizzBuzz'
 
 */
+var print = "";
+for(var i= 1; i < 101; i++)
+{
+  if(i%3 === 0 && i % 5 === 0){
+  	print = "FizzBuzz";
+  } else if(i%3 === 0){
+    print = "Fizz";
+  } else if(i%5 === 0){
+    print = "Buzz"; 
+  } else{
+  	print = i;
+  }
+  console.log(print);
+}

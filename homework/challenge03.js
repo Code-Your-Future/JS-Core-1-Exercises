@@ -16,3 +16,11 @@ Should return:
 
 'Found the needle at position 2'
 */
+
+var findNeedle = function(arr){
+ if(arr.includes("needle"))
+  return arr.indexOf("needle");
+}
+
+var position = findNeedle(['hay', 'rabbit', 'needle', 'hat']);
+console.log('Found the needle at position '+ position);
