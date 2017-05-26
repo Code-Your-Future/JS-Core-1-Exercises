@@ -16,3 +16,17 @@ Should return:
 
 'Found the needle at position 2'
 */
+
+var haystack = ['hay', 'rabbit', 'needle', 'hat'];
+
+function findNeedle(arrayHere) {
+    var itemIndex = 0;
+    for (i=1; i<arrayHere.length; i++) {
+        if (arrayHere[i] == 'needle') {
+            itemIndex = arrayHere.indexOf('needle');
+        }
+    }
+    return itemIndex+1;
+}
+
+console.log('found the needle at position '+ findNeedle(haystack));
