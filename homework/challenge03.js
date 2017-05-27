@@ -7,12 +7,19 @@ Write a function `findNeedle()` that takes an array full of junk but containing 
 After your function finds the needle it should return a message (as a string) that says: `"Found the needle at position x"`, with `x` being the index number at which you find the needle.
 
 So:
+*/
+function findNeedle(array){
+    for(var i=1; i<array.length; i++){
+    if(i%2===0){
+console.log('Found the ' +array[i]  +' at position ' +i);
 
+}
+    }
+}
 var haystack = ['hay', 'rabbit', 'needle', 'hat'];
 
 findNeedle(haystack);
-
+/*
 Should return:
-
 'Found the needle at position 2'
 */
