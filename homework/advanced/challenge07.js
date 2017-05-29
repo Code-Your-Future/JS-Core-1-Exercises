@@ -22,15 +22,32 @@ The function should return how much each friend should contribute to the bill.
 **Extra credit**: How much should each friend pay if they want to add a 10% tip?
 */
 
+/*
 var total=0;
 var numberOfFriends = 4;
 var bill = [7.99, 6.99, 14.99, 4.99];
-var result = function(bill,nubmer){
+var pricesWithoutTip = function(bill,nubmer){
 for(var i=0;i<bill.length;i++){
 total+=bill[i];
 }
-var r = total / numberOfFriends;
-return r;
+var result = total / numberOfFriends;
+return result;
 }
+console.log(pricesWithoutTip(bill,numberOfFriends));
+*/
+ 
+var total=0;
+var numberOfFriends = 4;
+var bill = [7.99, 6.99, 14.99, 4.99];
 
-console.log(result(bill,numberOfFriends));
+var pricesWithTip = function(bill,nubmer){
+for(var i=0;i<bill.length;i++){
+total+=bill[i];
+}
+var result = (total+total*0.1) / numberOfFriends;
+return Math.round(result*100)/100;
+}
+console.log(pricesWithTip(bill,numberOfFriends));
+
+
+
