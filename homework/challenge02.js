@@ -21,3 +21,14 @@ Counting to 15 should look like this:
 'FizzBuzz'
 
 */
+
+for (var i =1; i <= 100; i++){
+if (i % 3 === 0){
+    if (i % 5){
+        console.log("fizz");
+}
+}
+    else{
+        console.log(i);
+    }
+}
