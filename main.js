@@ -116,8 +116,8 @@ function shortcut(myWords) {
   var answer = [];
   for(var i = 0; i < myWords.length; i++) {
     var currentLetter = myWords[i];
-    if (myVowels.indexOf(currentLetter) === -1) {
-      answer.push(currentLetter);
+    if (myVowels.indexOf(myLetter) === -1) {
+      answer.push(myLetter);
     }
   }
   return answer.join('');
@@ -148,9 +148,9 @@ var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
 function removeVowels(myWords) {
   var answer = [];
   for(var i = 0; i < myWords.length; i++) {
-    var currentLetter = myWords[i];
-    if (vowels.indexOf(currentLetter) === -1) {
-      answer.push(currentLetter);
+    var myLetter = myWords[i];
+    if (vowels.indexOf(myLetter) === -1) {
+      answer.push(myLetter);
     }
   }
   return answer.join('');
