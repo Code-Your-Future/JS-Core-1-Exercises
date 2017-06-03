@@ -25,8 +25,8 @@ The function should return how much each friend should contribute to the bill.
 var bill = [7.99, 6.99, 14.99, 4.99];
 var numberOfFriends = 4;
 
-function sumArray(array, share) {
-  for (var index = 0, length = array.length, sum = 0; index < length; sum += array[index++]);
+function sumArray(items, share) {
+  for (var index = 0, length = items.length, sum = 0; index < length; sum += items[index++]);
   return sum/share + (sum/share)*(10/100);
 }
 console.log(sumArray(bill, numberOfFriends));

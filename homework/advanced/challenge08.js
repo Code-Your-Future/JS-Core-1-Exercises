@@ -11,3 +11,12 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
+var kettlePrice = 6,
+    threeMugsPrice = 9,
+    totalPrice = kettlePrice + threeMugsPrice,
+    eachOne = totalPrice/3;
+
+console.log("Nadia should pay "+eachOne+","+
+             "Suzie should pay "+eachOne+" and "+
+             "Katrina should pay "+eachOne+"."
+           );
