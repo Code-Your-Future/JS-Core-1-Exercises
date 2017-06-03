@@ -8,3 +8,15 @@ shortcut("goodbye")  // --> "gdby"
 shortcut("nodegirls")  // --> "nd grls"
 shortcut('how are you today?') // --> "hw r y tdy?"
 */
+function shortcut (enterString) {
+    newString = "";
+    vowal = enterString.split("");
+    for (i=0; i<vowal.length; i++) {
+        if (vowal[i] !== 'a' && vowal[i] !== 'e' && vowal[i] !== 'i' && vowal[i] !== 'o' && vowal[i] !== 'u' ) {
+            newString = newString + vowal[i];
+        }
+    }
+
+    console.log (newString);
+}
+shortcut ("goodbye");
