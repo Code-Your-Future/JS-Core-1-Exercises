@@ -8,11 +8,25 @@ After your function finds the needle it should return a message (as a string) th
 
 So:
 
-var haystack = ['hay', 'rabbit', 'needle', 'hat'];
 
-findNeedle(haystack);
-
-Should return:
-
-'Found the needle at position 2'
 */
+// findNeedle(haystack);
+
+// Should return:
+
+// 'Found the needle at position 2'
+function searchArray (list, textToFind) {
+    for (i=0; i< haystack.length; i++) {
+        if (haystack[i]===textToFind) {
+            return i;
+        }
+    }
+}
+
+var haystack = ['hay', 'rabbit', 'needle', 'hat'];
+var text;
+
+text= "needle";
+console.log ("Found the " + text + " at position "+ searchArray(haystack, text
+));
+   
