@@ -19,7 +19,7 @@ Should return:
 
 var haystack = ['hay', 'rabbit', 'needle', 'hat'];
 
-function findNeedle(arrayHere) {
+function findNeedle (arrayHere) {
     var itemIndex = 0;
     for (i=1; i<arrayHere.length; i++) {
         if (arrayHere[i] == 'needle') {
