@@ -39,3 +39,10 @@ var writers = [
 
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
+
+
+for (var i = 0; i < 12; i++) {
+    var a = Array(i).join("*");
+    console.info(a);
+}
+
