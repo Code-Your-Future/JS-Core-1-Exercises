@@ -16,3 +16,11 @@ Should return:
 
 'Found the needle at position 2'
 */
+
+var haystack = ['hey', 'rabbit','rabbit','rabbit','rabbit','rabbit', 'needle', 'hat']
+    for (a = 0; a <= haystack.length; a++){
+    if (haystack[a] !== 'needle')
+    console.log(" I can not find it")
+    else
+    console.log ('Found the needle at position ' + a)
+};
