@@ -115,8 +115,8 @@ var myVowels = ['a', 'e', 'i', 'o', 'u'];
 function shortcut(myWords) {
   var answer = [];
   for(var i = 0; i < myWords.length; i++) {
-    var currentLetter = myWords[i];
-    if (myVowels.indexOf(myLetter) === -1) {
+    var myLetter = myWords[i];
+    if (myVowels.indexOf(myLetter) < 0) {
       answer.push(myLetter);
     }
   }
@@ -149,7 +149,7 @@ function removeVowels(myWords) {
   var answer = [];
   for(var i = 0; i < myWords.length; i++) {
     var myLetter = myWords[i];
-    if (vowels.indexOf(myLetter) === -1) {
+    if (vowels.indexOf(myLetter) < 0) {
       answer.push(myLetter);
     }
   }
@@ -159,4 +159,16 @@ function removeVowels(myWords) {
 var result = removeVowels(alphabet);
 console.log(result);
 
+var hashTag = "";
+for(var i = 0; i < 7; i++) {
+  hashTag = hashTag + "#";
+  console.log(hashTag);
+}
 
+
+var refugeeCountries = ['Uganda', 'Syria', 'Russia', 'Afghan', 'Ethiopia'];
+console.log(refugeeCountries);
+
+for(var i = 0; i < refugeeCountries.length; i++) {
+  console.log(refugeeCountries[i]);
+}
