@@ -16,3 +16,13 @@ Should return:
 
 'Found the needle at position 2'
 */
+var haystack = ['hay', 'rabbit', 'needle', 'hat'];
+
+function findNeedle(haystack) {
+    for (var i = 0; i < haystack.length; i++) {
+        if (haystack[i] === "needle") {
+            return i;
+        }
+    }
+}
+console.log("Found the needle at position " + findNeedle(haystack));
