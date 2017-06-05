@@ -51,18 +51,29 @@ function shortcut2(word) {
     return result;
 }
 */
+var words = ['goodbye', 'nodegirls', 'how are you today', 'hat'];
 
 function shortcut(word) {
-    var word = "";
-    for (var word = 0; word < word.length; word++) {
-        if (words[word] === "o") {
-            result.push(word);
-        }
-        if (words[word] === "e") {
-            result.push(word);
-        }
-        return result;
+    var result = "";
+    for (var i = 0; i < word.length; i++) {
+        if (word[i] !== "o" && word[i] !== "e" && word[i] !== "i" && word[i] !== "a" && word[i] !== "u") 
+        result = result + word[i];
+
     }
+
+    
+return result;
+
 }
 
+
+
+
+
 console.log(shortcut("goodbye"));
+console.log(shortcut("nodegirls"));
+console.log(shortcut("how are you today"));
+console.log(shortcut("hat"));
+
+
+

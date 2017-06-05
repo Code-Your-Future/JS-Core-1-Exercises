@@ -21,7 +21,9 @@ function removeVowels(character) {
     var result = ""
     for (var vowels = 0; vowels < character.length; vowels++) {
         if ((vowels === "a") && (vowels === "e") && (vowels === "i") && (vowels === "o") && (vowels === "u")) {
-            return "vowels"
+            result = result + character[vowels];
+              return result;
+
         }
          
         else {
