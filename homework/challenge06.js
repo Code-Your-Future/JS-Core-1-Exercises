@@ -14,3 +14,31 @@ Running your function by passing in `alphabet` should give you an array of all c
 removeVowels(alphabet) // --> ['b', 'c', 'd', 'f', ... 'y', 'z']
 
 */
+
+
+
+// var array_result = [];
+// function removeVowels(alphabet) {
+
+// 	for (var i = 0; i < alphabet.length; i++) {
+// 		if (!((alphabet[i] === "o") || (alphabet[i] === "e") || (alphabet[i] === "a") || (alphabet[i] === "u") || (alphabet[i] === "i")
+// 			|| (alphabet[i] === "O") || (alphabet[i] === "E") || (alphabet[i] === "A") || (alphabet[i] === "U") || (alphabet[i] === "I"))) 
+            
+// 			array_result.push(alphabet[i]);	
+//             console.log(array_result);
+// 	}
+	
+// }
+
+// var alphabet = ['A', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'b', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+// removeVowels(alphabet);
+
+
+// var str = 'hello world';
+// function removeVowels(pass) {
+//   return str.replace(/[aeiou]/gi, '');
+//   console.log(str);
+// }
+
+// removeVowels(str);

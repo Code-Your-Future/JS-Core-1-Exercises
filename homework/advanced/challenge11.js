@@ -12,7 +12,4 @@ Give you bank object the following functions:
 If you can think of any other functions that it would be useful for your bank to have 
 then add them and test your answers on the console.
 e.g you can add interest to all of your accounts.
-
-
-
 */

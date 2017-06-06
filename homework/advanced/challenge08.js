@@ -11,3 +11,9 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
+
+
+var number =  [1,2,3,5,6,6,5,2,6];
+
+var onlyTwo = number.filter(function(x){return x === 6 })
+console.log (onlyTwo);
