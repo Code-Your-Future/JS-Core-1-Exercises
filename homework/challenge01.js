@@ -73,7 +73,7 @@ var writers = [
 
 
 for(var i=0; i <writers.length-1; i++){
-  console.log( writers[3].firstName+ " this ,my Name " + writers[3].age + " this is my age " + writers[0].occupation + " is't my occupation " );
+  console.log( writers[2].firstName + " this ,my Name " + writers[3].age + " this is my age " + writers[0].occupation + " is't my occupation " );
   if (writers === true ){
 console.log('alive');
 }

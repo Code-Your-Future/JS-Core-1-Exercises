@@ -8,17 +8,15 @@
 // about of Arrays !!!
 
 
-// this is my firtt program
+var animals = ['tiger','lion','bunny','cat','dog'];
 
-// var animals = ['tiger','lion','bunny','cat','dog'];
+console.log(animals[0]);
 
-// console.log(animals[0]);
+console.log(animals.length);
 
-// console.log(animals.length);
-
-// for(var i=0; i < animals.length-1; i++){
-//        console.log(animals[i]);
-// }
+for(var i=0; i < animals.length-1; i++){
+       console.log(animals[i]);
+}
 
 
 // var countries = ['Glasglow','Spain','Honduras','Brasil','Argentina','Francia'];
