@@ -5,4 +5,12 @@
       node class-exercises.js
 */
 
-console.log('Hello World');
+//console.log('marhaba');
+var animal =['tiger' 'lion' 'bunny'];
+//console.log(0)
+var laptop{
+  color:"red",
+  weight:6,
+  isFoldable:true
+};
+
