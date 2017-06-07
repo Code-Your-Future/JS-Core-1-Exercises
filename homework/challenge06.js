@@ -19,20 +19,14 @@ var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 
 function removeVowels(character) {
     var result = ""
-    for (var vowels = 0; vowels < character.length; vowels++) {
-        if ((vowels === "a") && (vowels === "e") && (vowels === "i") && (vowels === "o") && (vowels === "u")) {
-            result = result + character[vowels];
-              return result;
-
+    for (var i = 0; i < character.length; i++) {
+        if (character[i] !== "a" && character[i] !== "e" && character[i] !== "i" && character[i] !== "o" && character[i] !== "u") {
+            result = result + character[i];
         }
-         
-        else {
-            console.log(character);
         }
+         return result;
 
     }
-}
-
 
 
 
