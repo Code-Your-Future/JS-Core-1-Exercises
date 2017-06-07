@@ -13,7 +13,15 @@ Test your function with different prices to see if it works.
 */
 
 
-var number =  [1,2,3,5,6,6,5,2,6];
+var totalPrice = 0;
+var mugsCost = 0;
+var price = function(mugCost,kettleCost){
+    mugsCost = Math.abs(mugCost*3);
+    totalPrice = mugsCost + Math.abs(kettleCost);
+return Math.round(totalPrice/3*100)/100;
+}
 
-var onlyTwo = number.filter(function(x){return x === 6 })
-console.log (onlyTwo);
+
+console.log(price(85,3));
+console.log(price(-67,2));
+console.log(price("s",7));
