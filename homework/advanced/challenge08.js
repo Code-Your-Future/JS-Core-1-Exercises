@@ -11,3 +11,18 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
+
+var kettlePrice = [25];
+var mugPrice = 5;
+var houseMates = 3
+
+function finalBill(bill) {
+    var totalBill = 0;
+    for (i = 0; i < bill.length; i++) {
+            totalBill = totalBill + bill[i] ;
+        }
+        return (totalBill + mugPrice) / houseMates ;
+    }
+
+
+    console.log(finalBill(kettlePrice));
