@@ -72,16 +72,11 @@ athlete.run();
 athlete.run();
 athlete.run();
 athlete.run();
-athlete.run();
-athlete.run();
-athlete.run();
-athlete.run();
-athlete.run();
-athlete.run();
 athlete.drink();
 bottle.fill();
 athlete.drink();
 athlete.drink();
 
-console.log("hydration Level is :" + athlete.hydrationLevel + "\nThe distance value is :" + athlete.distance
-+ '\nbottles volume : ' + bottle.volume);
+console.log("hydration Level is :" + athlete.hydrationLevel + 
+" The distance value is :" + athlete.distance
++ ' bottles volume : ' + bottle.volume);

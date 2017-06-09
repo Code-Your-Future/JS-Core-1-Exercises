@@ -19,11 +19,11 @@ e.g you can add interest to all of your accounts.
 var bank = {
     acounts: [
         {
-            name: "jon",
+            name: "john",
             balance: 200
         },
         {
-            name: "eliz",
+            name: "ferguson",
             balance: 100
         }
     ],
