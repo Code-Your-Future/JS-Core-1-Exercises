@@ -11,3 +11,19 @@ stringy(5) // --> '10101'
 
 The size will always be positive and will only use whole numbers.
 */
+// 012345
+//"101010" 
+function stringy(size){
+    console.log("stringy");
+    var alt = "";
+    for(i = 0; i <size; i++){
+        if(i % 2===0){
+            alt+="1";
+        }else{
+            alt+="0";
+        }
+    }
+    return alt;
+}
+
+console.log(stringy(2));//"10"
