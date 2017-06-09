@@ -85,7 +85,7 @@ var bottle = {
 	empty: function(){
 		if (this.volume === 0 || this.volume === -10 ||  this.volume === -20  ) {
 			
-			console.log("Sorry the bottle is empty" )
+			console.log("Sorry the bottle empty" )
 		return true
 
 		// this function should return true if your bottles volumn = 0
@@ -110,3 +110,4 @@ bottle.drink();
 bottle.drink();
 bottle.drink();
 bottle.drink();
+bottle.empty();
