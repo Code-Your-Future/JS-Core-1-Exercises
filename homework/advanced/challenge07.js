@@ -21,3 +21,21 @@ The function should return how much each friend should contribute to the bill.
 
 **Extra credit**: How much should each friend pay if they want to add a 10% tip?
 */
+
+// pseudo code
+//create a function
+// loop through the array and add the total cost - array reduce
+//divide the result to the number of friends
+// return the result
+
+var bill = [7.99, 6.99, 14.99, 4.99];
+var numberOfFriends = 4;
+
+function shareBill(_bill, _numberOfFriends) {
+    var totalBill = _bill.reduce(function(accu, value) {
+        return accu + value;
+    });
+    console.log(totalBill / _numberOfFriends);
+}
+
+shareBill(bill, numberOfFriends); //8.74

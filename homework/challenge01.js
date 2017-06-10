@@ -5,7 +5,7 @@ Did you know you can also have an array of objects? We've created one for you he
 "Hi, my name is {firstName} {lastName}. I am {age} years old, and work as a {occupation}."
 
 Here is the array:
-
+*/
 var writers = [
   {
     firstName: "Virginia",
@@ -37,5 +37,18 @@ var writers = [
   },
 ];
 
+writers.forEach(function(value){
+    console.log("Hi, my name is "+ value.firstName + " " + value.lastName + ". I am "+ value.age +" years old, and work as a "+ value.occupation+".");
+});
+/*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */
+
+var aliveWriters = writers.filter(function(value){
+    if(value.alive === true){
+		return value;
+	}
+});
+aliveWriters.forEach(function(value){
+    console.log("Hi, my name is "+ value.firstName + " " + value.lastName + ". I am "+ value.age +" years old, and work as a "+ value.occupation+".");
+});

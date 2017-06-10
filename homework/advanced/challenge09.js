@@ -64,3 +64,34 @@ if(!bottle.empty()){
 70
 
 */
+
+var bottle = {
+    volume: 0,
+    fill: function() {
+        // calling this function should make you bottles volume = 100; 
+        this.volume = 100;
+    },
+    drink: function() {
+        this.volume = this.volume - 10;
+    },
+    empty: function() {
+        // this function should return true if your bottles volumn = 0
+        if (this.volume === 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}
+
+//test
+bottle.fill();
+bottle.drink();
+bottle.drink();
+bottle.drink();
+
+if (!bottle.empty()) {
+    console.log('bottles volume = ' + bottle.volume);
+} //bottles volume = 70
+//to make the bootle object available for other files to require it
+module.exports = bottle;
