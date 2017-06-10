@@ -23,27 +23,32 @@ to drink if your bottle is not empty.
 Tip: you will need to research node require
 
 */
-var athlete = {
+var bottle = {
 	volume: 0,
 	fill: function(){
-		// calling this function should make you bottles volume = 100;
-		return this.volume = this.volume + 100;
+	 	// calling this function should make you bottles volume = 100;
+    return this.volume = this.volume + 100;
 	},
 	drink: function(){
 		// calling this function should decrease your bottles volume by 10;
-		return this.volume = this.volume - 10;
+    return this.volume = this.volume - 10;
 	},
 	empty: function(){
 		// this function should return true if your bottles volumn = 0
 		if (this.volume === 0) {
 			return this.volume = true;
 		}
-	},
-		hydration : function (test1) {
-
-		},
-		distance  : function () {
-
-		}
+	}
 }
-console.log(athlete.hydration());
+var athlete ={
+	hydration: 100,
+	distance: 0,
+	run : function () {
+		this.hydration-=10;
+		this.distance+=10;
+	},
+	drink : function (bottle) {
+		bottle.drink();
+		this.hydration+=10;
+	}
+}
