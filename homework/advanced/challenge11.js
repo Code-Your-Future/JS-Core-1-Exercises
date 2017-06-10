@@ -18,11 +18,11 @@ e.g you can add interest to all of your accounts.
 */
 
 //Pseudo code
-//1. create a constuctor Bank with an account property
+//1. create a bank object with an accounts property
 // 1.1 create account as an array of two objects [{},{}]
 //2. create total, largest and average functions as properties of the bank object
 var temp = 0,
-    _total = 0;
+    _total;
 var bank = {
     accounts: [{
             name: "kiya",
@@ -38,6 +38,7 @@ var bank = {
         }
     ],
     total: function() {
+        _total = 0;
         for (var x = 0; x < this.accounts.length; x++) {
             _total = _total + this.accounts[x].balance;
         }
@@ -51,6 +52,17 @@ var bank = {
         }
         return temp;
     },
+    average: function() {
+        return this.total() / this.accounts.length;
+    },
+    interest: function() {
+        for (var i = 0; i < this.accounts.length; i++) {
+            this.accounts[i].interest = this.accounts[i].balance * 0.05;
+        }
+    }
 }
 console.log(bank.total());
 console.log(bank.largest());
+console.log(bank.average());
+bank.interest();
+console.log(bank.accounts);
