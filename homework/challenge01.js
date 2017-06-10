@@ -1,10 +1,10 @@
-/* Challenge 1: Famous Writers
+ Challenge 1: Famous Writers
 
-Did you know you can also have an array of objects? We've created one for you here. Loop through the array, and for each object, `console.log()` out the sentence:
+/*Did you know you can also have an array of objects? We've created one for you here. Loop through the array, and for each object, `console.log()` out the sentence:
 
 "Hi, my name is {firstName} {lastName}. I am {age} years old, and work as a {occupation}."
 
-Here is the array:
+Here is the array:*/
 
 var writers = [
   {
@@ -37,5 +37,44 @@ var writers = [
   },
 ];
 
-If you want an extra challenge, only `console.log()` the writers that are alive.
-*/
+// If you want an extra challenge, only `console.log()` the writers that are alive.
+if (firstName==='Virginia') {
+  console.log("Hi + my name is {firstName} {lastName}.+ I am {age} years old,+ and work as a {occupation}." );
+} else if (firstName==='Zadie') {
+  console.log("Hi + my name is {firstName} {lastName}.+ I am {age} years old,+ and work as a {occupation}." );
+}else if (firstName==='Jane') {
+  console.log("Hi + my name is {firstName} {lastName}.+ I am {age} years old,+ and work as a {occupation}." );
+}else (firstName==='bell') {
+  console.log("Hi + my name is {firstName} {lastName}.+ I am {age} years old,+ and work as a {occupation}." );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
