@@ -1,4 +1,3 @@
-
 # Exercises and Homework for JS Core-1 module
 
 This is the homework for JS Core first class. These exercises are forked from the [Node Girls JavaScript Beginners' workshop](https://github.com/node-girls/beginners-javascript).
