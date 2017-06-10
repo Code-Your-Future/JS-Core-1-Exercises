@@ -1,0 +1,6 @@
+var myNumber = 5;
+if (myNumber <0){
+    console.log("negative")
+}else {
+    console.log("positive")
+}
