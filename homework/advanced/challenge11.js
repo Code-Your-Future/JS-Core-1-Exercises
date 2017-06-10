@@ -65,4 +65,8 @@ console.log(bank.total());
 console.log(bank.largest());
 console.log(bank.average());
 bank.interest();
-console.log(bank.accounts);
+(function() {
+    for (var y = 0; y < bank.accounts.length; y++) {
+        console.log(bank.accounts[y].name + " have earned £" + bank.accounts[y].interest + " interest");
+    }
+})();
