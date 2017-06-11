@@ -11,3 +11,20 @@ stringy(5) // --> '10101'
 
 The size will always be positive and will only use whole numbers.
 */
+
+function stringy(limit) {
+  var resultCharacters = [];
+  for(var i = 1; i <= limit; i++) {
+    if ( i % 2 === 0 ) {
+      resultCharacters.push('0');
+    } else {
+      resultCharacters.push('1');
+    }
+  }
+  console.log(resultCharacters.join(''));
+}
+
+stringy(6);
+stringy(5);
+
+//console.log(result);

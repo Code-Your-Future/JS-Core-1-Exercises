@@ -9,16 +9,16 @@ After your function finds the needle it should return a message (as a string) th
 So:
 */
 function findNeedle(array){
-    for(var i=1; i<array.length; i++){
-    if(i%2===0){
-console.log('Found the ' +array[i]  +' at position ' +i);
-
-}
+    for(var i=0; i<array.length; i++){
+      if (array[i] === "needle") {
+        return 'Found the ' +array[i]  +' at position ' +i;
+      }
     }
 }
-var haystack = ['hay', 'rabbit', 'needle', 'hat'];
+var haystack = ['hay', 'rabbit', 'needle', 'hat', 'asdasd', 'asdasdas'];
 
-findNeedle(haystack);
+var x = findNeedle(haystack);
+console.log (x);
 /*
 Should return:
 'Found the needle at position 2'
