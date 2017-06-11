@@ -17,14 +17,14 @@ Should return:
 'Found the needle at position 2'
 */
 
-//Solution:
+/*Solution:*/
 
 var findNeedle = function(arr) {
-    if(arr.includes("needle"))
+    if(arr.includes("needle"));
     return arr.indexOf("needle");
 }
 
 var position = findNeedle(['hay', 'rabbit', 'needle', 'hat']);
     
-    console.log('Found the needle at position '+ position)
+    console.log('Found the needle at position '+ position);
 };
