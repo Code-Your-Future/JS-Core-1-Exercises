@@ -30,8 +30,8 @@ Tip: you will need to research node require
 var bottle = {
     volume: 0,
     fill: function () {
-        /*Calling this function should make you bottles volume = 150;*/
-        this.volume = 150;
+        /*Calling this function should make you bottles volume = 200;*/
+        this.volume = 200;
     },
     drink: function () {
         /*Calling this function should decrease your bottles volume by 33;*/
@@ -84,5 +84,5 @@ bottle.fill();
 athlete.drink();
 athlete.drink();
 
-console.log("hydration Level is: " + athlete.hydrationLevel + "\nThe distance value is: " + athlete.distance
-+ '\nbottles volume: ' + bottle.volume);
+console.log("Hydration Level is: " + athlete.hydrationLevel + "\nThe distance value is: " + athlete.distance
++ '\nBottles volume: ' + bottle.volume);
