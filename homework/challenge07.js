@@ -40,7 +40,7 @@ var total = 0;
 var numberOfFriends = 4;
 var bill = [7.99, 6.99, 14.99, 4.99];
 
-var pricesWithTip = function(bill,nubmer) {
+var pricesWithTip = function(bill,number) {
     for(var i = 0; i < bill.length; i++) {
     total += bill[i];
 }
