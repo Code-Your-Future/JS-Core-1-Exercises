@@ -43,19 +43,19 @@ var bank = {
         }
         return largest
     },
-     Average: function () {
+    Average: function () {
         var average = 0;
         for (var i = 0; i < this.acounts.length; i++) {
-           average += this.acounts[i].balance;
+            average += this.acounts[i].balance;
         }
-        return average/this.acounts.length
+        return average / this.acounts.length
     },
     Interest: function () {
         var interest = 0;
         for (var i = 0; i < this.acounts.length; i++) {
-           this.acounts[i].balance = this.acounts[i].balance*1.1;
+            this.acounts[i].balance = this.acounts[i].balance * 1.1;
         }
-        
+
     }
 
 };

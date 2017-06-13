@@ -35,19 +35,19 @@ return result;
 }
 console.log(pricesWithoutTip(bill,numberOfFriends));
 */
- 
-var total=0;
+
+var total = 0;
 var numberOfFriends = 4;
 var bill = [7.99, 6.99, 14.99, 4.99];
 
-var pricesWithTip = function(bill,nubmer){
-for(var i=0;i<bill.length;i++){
-total+=bill[i];
+var pricesWithTip = function (bill, number) {
+    for (var i = 0; i < bill.length; i++) {
+        total += bill[i];
+    }
+    var result = (total + total * 0.1) / number;
+    return Math.round(result * 100) / 100;
 }
-var result = (total+total*0.1) / numberOfFriends;
-return Math.round(result*100)/100;
-}
-console.log(pricesWithTip(bill,numberOfFriends));
+console.log(pricesWithTip(bill, numberOfFriends));
 
 
 

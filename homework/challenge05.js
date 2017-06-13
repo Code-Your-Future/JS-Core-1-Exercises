@@ -18,11 +18,11 @@ var result = "";
 function stringy(size) {
     if (size > 0 && size != "" && size % 1 === 0) {
         for (var i = 1; i <= size; i++) {
-            if (i%2===1) {
-                result += "1";   
+            if (i % 2 === 1) {
+                result += "1";
             }
-            else if (i%2===0) {
-                result += "0"; 
+            else if (i % 2 === 0) {
+                result += "0";
             }
         }
         console.log(result);

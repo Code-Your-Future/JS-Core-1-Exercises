@@ -21,19 +21,19 @@ Counting to 15 should look like this:
 'FizzBuzz'
 
 */
-var multipes_of_3 = "Fizz";
-var multipes_of_5 = "Buzz";
-var multipes_of_3_and_5 = "FizzBuzz";
+var multiples_of_3 = "Fizz";
+var multiples_of_5 = "Buzz";
+var multiples_of_3_and_5 = "FizzBuzz";
 
 for (var i = 1; i <= 100; i++) {
     if (i % 5 === 0 && i % 3 === 0) {
-        console.log(multipes_of_3_and_5);
+        console.log(multiples_of_3_and_5);
     }
     else if (i % 5 === 0) {
-        console.log(multipes_of_5);
+        console.log(multiples_of_5);
     }
     else if (i % 3 === 0) {
-        console.log(multipes_of_3);
+        console.log(multiples_of_3);
     }
     else {
         console.log(i);

@@ -27,16 +27,14 @@ function findNeedle(array) {
     for (var i = 0; i < array_size; i++) {
         if (array[i] === "needle") {
             needle_pos = i;
-            console.log(result + i);
             is_result = true;
+            return result + i;
         }
     }
     if (!is_result) {
-        console.log(noresult);
+        return noresult;
     }
-
-
 }
 var haystack = ['hay', 'rabbit', 'needle', 'hat'];
 
-findNeedle(haystack);
+console.log(findNeedle(haystack));
