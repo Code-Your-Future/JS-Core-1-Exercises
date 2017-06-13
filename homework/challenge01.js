@@ -72,14 +72,12 @@ var writers = [
 ];
 
 
-
 for (var i = 0; i < writers.length; i++) {
-  var person = writers[i];
-  if (person.alive === true) {
+  if (writers[i].alive === true) {
     console.log("Hi, my name is "+
-                person.firstName+" "+
-                person.lastName+". I am "+
-                person.age+" yeas old, and work as a "+
-                person.occupation);
+                writers[i].firstName+" "+
+                writers[i].lastName+". I am "+
+                writers[i].age+" yeas old, and work as a "+
+                writers[i].occupation);
   }
 }
