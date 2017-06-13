@@ -27,27 +27,32 @@ var bottle = {
 	volume: 0,
 	fill: function(){
 	 	// calling this function should make you bottles volume = 100;
-    return this.volume = this.volume + 100;
+		'use strict';
+    return (this.volume = this.volume + 100);
 	},
 	drink: function(){
 		// calling this function should decrease your bottles volume by 10;
-    return this.volume = this.volume - 10;
+		'use strict';
+    return (this.volume = this.volume - 10);
 	},
 	empty: function(){
 		// this function should return true if your bottles volumn = 0
+		'use strict';
 		if (this.volume === 0) {
-			return this.volume = true;
+		return true;
 		}
 	}
 }
-var athlete ={
+var athlete = {
 	hydration: 100,
 	distance: 0,
 	run : function () {
+			'use strict';
 		this.hydration-=10;
 		this.distance+=10;
 	},
 	drink : function (bottle) {
+			'use strict';
 		bottle.drink();
 		this.hydration+=10;
 	}
