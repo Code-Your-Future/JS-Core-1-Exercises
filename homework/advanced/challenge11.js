@@ -28,21 +28,20 @@ var bank ={
               }
           ],
   sum : function() {
-      var balanceOne = this.accounts[0].balance;
-      var balanceTwo = this.accounts[1].balance;
+    'use strict';
+      var balanceOne = this.accounts[0].balance,
+          balanceTwo = this.accounts[1].balance;
       return "Total balance is "+ (balanceOne + balanceTwo);
   },
   largest : function () {
-    if (this.accounts[0].balance > this.accounts[1].balance) {
-      return "The highest balance is "+ this.accounts[0].balance;
-    }else {
-      return "The highest balance is "+this.accounts[1].balance;
-    }
+    'use strict';
+      return "The highest balance is "+Math.max(this.accounts[0].balance, this.accounts[1].balance);
   },
   Average : function () {
+    'use strict';
     var balanceOne = this.accounts[0].balance;
     var balanceTwo = this.accounts[1].balance;
-    return "The Average balance is "+ (balanceOne + balanceTwo)/(bank.accounts.length);
+      return "The Average balance is "+ (balanceOne + balanceTwo)/(bank.accounts.length);
   }
 };
 
