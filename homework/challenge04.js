@@ -9,8 +9,8 @@ shortcut("nodegirls")  // --> "nd grls"
 shortcut('how are you today?') // --> "hw r y tdy?"
 */
 var shortcut = 'how are you today?';
-function removeVowels(staff) {
-  var vowels = staff.replace(/a/gi, "").replace(/e/gi, "").replace(/i/gi, "").replace(/o/gi, "").replace(/u/gi, "");
-  return vowels;
+function removeVowelsLetter(staff) {
+  var rmVowels = staff.replace(/a/gi, "").replace(/e/gi, "").replace(/i/gi, "").replace(/o/gi, "").replace(/u/gi, "");
+  return rmVowels;
 }
-console.log(removeVowels(shortcut));
+console.log(removeVowelsLetter(shortcut));
