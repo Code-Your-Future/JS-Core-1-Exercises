@@ -21,3 +21,12 @@ The function should return how much each friend should contribute to the bill.
 
 **Extra credit**: How much should each friend pay if they want to add a 10% tip?
 */
+
+var bill = [7.99, 6.99, 14.99, 4.99];
+var numberOfFriends = 4;
+
+function sumArray(items, share) {
+  for (var index = 0, length = items.length, sum = 0; index < length; sum += items[index++]);
+  return sum/share + (sum/share)*(10/100);
+}
+console.log(sumArray(bill, numberOfFriends));
