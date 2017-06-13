@@ -27,3 +27,7 @@ function stringy(size){
 }
 
 console.log(stringy(2));//"10"
+console.log(stringy(5));//"10101"
+console.log(stringy(6));//"101010"
+console.log(stringy(8));//"10101010"
+

@@ -20,22 +20,24 @@ Should return:
 'Found the needle at position 2'
 */
 var haystack = ['rabbit', 'needle', 'hat'];
-//var needle = "rabbit"
-// function findNeedle(haystack) {
-//     for (var i = 0; i < haystack.length; i++) {
-//         if (haystack[i] === "needle") {
+var needle = "rabbit"
+function findNeedle(haystack) {
+    for (var i = 0; i < haystack.length; i++) {
+        if (haystack[i] === "needle") {
 
-//             console.log(" found needle at position "+i);
-//         }
-//     }
+            console.log(" found needle at position "+i);
+        }
+   }
 
 // }
 // findNeedle(haystack);
-function findHat(haystack){
-    for(i = 0; i <haystack.length; i++){
-        if(haystack[i]==="hat"){
-            console.log(" foud hat position"+i);
-        }
-    }
-}
-findHat(haystack);
+// function findHat(haystack){
+//     for(i = 0; i <haystack.length; i++){
+//         if(haystack[i]==="hat"){
+//             console.log(" foud hat position"+i);
+//         }
+//     }
+// }
+// findHat(haystack);
+// var haystack1 =["hat","needle", "rabbit"];
+// findHat(haystack1);

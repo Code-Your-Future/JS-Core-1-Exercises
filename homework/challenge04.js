@@ -11,45 +11,58 @@ shortcut('how are you today?') // --> "hw r y tdy?"
 
 
 
-function shortcut(lowercaseVowls) {
+function shortcut(initialString) {
     var lowercaseVowls = ["a", "e", "i", "o", "u"]
-    var string = ("goodbye");
-    var shortcut = ("nodegirls")
+    var outputString = "";
+    for (var i = 0; i < initialString.length; i++) {  //[g,o,o,d,b,y,e]
+        var isCurrentCharVowel = false;               //[F,T,T,F,F,F,T]
 
-    for (var i = 0; i < string.length; i++) {
+        for (var j = 0; j < lowercaseVowls.length; j++) {
+            if (initialString[i] === lowercaseVowls[j]) {
+                isCurrentCharVowel = true;
+            }
 
-
+        } if (isCurrentCharVowel === false) {
+            outputString += initialString[i];
+        }
     }
-    return string;
-
+    return outputString;
 }
+console.log(shortcut("Habiiba"));
+
+
+
 // console.log(shortcut);
 function sitdown(name) {
     return "sit down " + name;
 }
-console.log(sitdown(" ayub "));
-console.log(sitdown(" ilyas "));
-var result = sitdown("nate");
-console.log(result)
 function goToBed(time) {
-    return " sit down ilyas and go To Bed right now " + time;
+    return " and go To Bed" + time;
 }
-console.log(goToBed("  right now "));
-var when = goToBed("8");
-console.log(when);
-
-var command = result + " and " + when;
-console.log(command)
-
-var sitResult = sitdown("nate")
 function eat(meal) {
     return " and eat your " + meal;
 }
+
+console.log(sitdown(" ayub "));
+console.log(sitdown(" ilyas "));
+
+// sitdown nate and go to bed at 8
+var result = sitdown("nate");
+console.log(result)
+console.log(goToBed(" ilyas "));
+var when = goToBed("8");
+console.log(when);
+var command = result + when;
+console.log(command)
+
+// sit nate and eat your dinner
+var sitResult = sitdown("nate")
 var eatResult = eat("dinner");
 console.log(sitResult + eatResult);
 
-var goresult = goToBed(" ilyas ");
-//var sitResult = sitdown(" nate  ");
-console.log(goresult + sitResult);
+// Sit down ilyas and go to bed right now
+var goresult = goToBed(" right now ");
+var sitResult = sitdown(" ilyas  ");
+console.log( sitResult+goresult);
 
 
