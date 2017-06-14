@@ -16,3 +16,25 @@ Should return:
 
 'Found the needle at position 2'
 */
+var is_result = false;
+var result = "Found the needle at position: "
+var noresult = "Sorry, there is no needle"
+var needle_pos = 0;
+
+
+function findNeedle(array) {
+    var array_size = array.length;
+    for (var i = 0; i < array_size; i++) {
+        if (array[i] === "needle") {
+            needle_pos = i;
+            is_result = true;
+            return result + i;
+        }
+    }
+    if (!is_result) {
+        return noresult;
+    }
+}
+var haystack = ['hay', 'rabbit', 'needle', 'hat'];
+
+console.log(findNeedle(haystack));
