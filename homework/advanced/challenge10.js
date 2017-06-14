@@ -40,7 +40,7 @@ var bottle = {
     empty: function () {
         // this function should return true if your bottles volumn = 0
         if (this.volume === 0) {
-            return true
+            return true;
         }
 
     }
@@ -62,8 +62,6 @@ var athlete = {
             bottle.drink();
             this.hydrationLevel += 10;
         }
-
-
     }
 };
 
