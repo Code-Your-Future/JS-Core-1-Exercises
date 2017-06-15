@@ -4,5 +4,13 @@
 
       node class-exercises.js
 */
+//boo lean wax run ah
+//hello world string
 
-console.log('Hello World');
+//this is my first program
+
+console.log('wan idin salamay adunka');
+console.log('this my new stadeying');
+console.log('wax barasho');
+
+
