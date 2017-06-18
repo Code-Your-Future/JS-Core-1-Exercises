@@ -21,6 +21,7 @@ Really our athlete should only be able to drink if the bottles volume is more th
 if you can add a conditional to your athletes drink function that only allows them
 to drink if your bottle is not empty.
 Tip: you will need to research node require1
+Tip: you will need to research node require
 
 
 
