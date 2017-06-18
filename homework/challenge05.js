@@ -25,7 +25,7 @@ function stringy(size) {
                 result += "0"; 
             }
         }
-        console.log(result);
+        return result;
     }
     else {
         console.log();
@@ -33,6 +33,7 @@ function stringy(size) {
 }
 
 stringy(10);
+console.log(result);
 
 
 
