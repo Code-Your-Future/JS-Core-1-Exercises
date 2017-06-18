@@ -17,7 +17,7 @@ e.g you can add interest to all of your accounts.
 
 */
 var bank = {
-    acounts: [
+    accounts: [
         {
             name: "john",
             balance: 200
@@ -29,31 +29,31 @@ var bank = {
     ],
     Total: function () {
         var total = 0;
-        for (var i = 0; i < this.acounts.length; i++) {
-            total += this.acounts[i].balance;
+        for (var i = 0; i < this.accounts.length; i++) {
+            total += this.accounts[i].balance;
         }
         return total
     },
     Largest: function () {
         var largest = 0;
-        for (var i = 0; i < this.acounts.length; i++) {
-            if (largest < this.acounts[i].balance) {
-                largest = this.acounts[i].balance;
+        for (var i = 0; i < this.accounts.length; i++) {
+            if (largest < this.accounts[i].balance) {
+                largest = this.accounts[i].balance;
             }
         }
         return largest
     },
      Average: function () {
         var average = 0;
-        for (var i = 0; i < this.acounts.length; i++) {
-           average += this.acounts[i].balance;
+        for (var i = 0; i < this.accounts.length; i++) {
+           average += this.accounts[i].balance;
         }
-        return average/this.acounts.length
+        return average/this.accounts.length
     },
     Interest: function () {
         var interest = 0;
-        for (var i = 0; i < this.acounts.length; i++) {
-           this.acounts[i].balance = this.acounts[i].balance*1.1;
+        for (var i = 0; i < this.accounts.length; i++) {
+           this.accounts[i].balance = this.accounts[i].balance*1.1;
         }
         
     }
