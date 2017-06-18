@@ -16,3 +16,19 @@ Should return:
 
 'Found the needle at position 2'
 */
+
+function searchArray(array, searchCriterion) {
+    for (i = 0; i < array.length; i++){
+        if (array[i] === searchCriterion)
+        return i;
+    }
+    return -1;
+}
+
+var haystack = ['hay', 'rabbit', 'needle', 'hat'];
+
+if (searchArray(haystack, "needle") >=0 || searchArray(haystack, "needle") < haystack.length) {
+    console.log("Needle found at: " + i);
+} else {
+    console.log("Needle could not be found!");
+}

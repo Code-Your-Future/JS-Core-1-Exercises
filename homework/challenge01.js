@@ -6,6 +6,11 @@ Did you know you can also have an array of objects? We've created one for you he
 
 Here is the array:
 
+
+
+If you want an extra challenge, only `console.log()` the writers that are alive.
+*/
+
 var writers = [
   {
     firstName: "Virginia",
@@ -34,8 +39,11 @@ var writers = [
     occupation: "writer",
     age: 64,
     alive: true
-  },
+  }
 ];
 
-If you want an extra challenge, only `console.log()` the writers that are alive.
-*/
+for (i = 0; i < writers.length; i++) {
+  if (writers[i].alive){
+    console.log("Hi, my name is " + writers[i].firstName + " " + writers[i].lastName + ", I am " + writers[i].age + " years old, and work as a " + writers[i].occupation + ".");
+  }
+}

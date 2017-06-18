@@ -64,3 +64,44 @@ if(!bottle.empty()){
 70
 
 */
+
+function Bottle() {
+	this.volume = 0;
+}
+
+Bottle.prototype.fill = function () {
+	this.volume = 100;
+};
+
+Bottle.prototype.drink = function () {
+	if (this.volume >= 10) {
+		this.volume -= 10;
+	} else if (this.volume > 0) {
+		this.volume = 0;
+	} else {
+		this.volume = 0;
+	}
+};
+
+Bottle.prototype.isEmpty = function () {
+	return this.volume === 0;
+};
+
+Bottle.prototype.getVolume = function () {
+	return this.volume;
+};
+
+module.exports = Bottle;
+
+/*myBottle = new Bottle();
+myBottle.printVolum();
+myBottle.fill();
+myBottle.printVolum();
+myBottle.drink();
+myBottle.drink();
+myBottle.drink();
+myBottle.printVolum();
+*/
+
+
+

@@ -16,3 +16,44 @@ e.g you can add interest to all of your accounts.
 
 
 */
+
+function Bank () {
+    this.accounts = [];
+}
+
+Bank.prototype.addAccount = function (accountName, accountBalance){
+    this.accounts.push({name: accountName, balance: accountBalance});
+};
+
+Bank.prototype.total = function(){
+    var sum = 0;
+    for (var i = 0; i < this.accounts.length; i++){
+        sum += this.accounts[i].balance;
+    }
+    return sum;
+};
+
+Bank.prototype.largest = function () {
+    var large = 0;
+    for (var i = 0; i < this.accounts.length; i++){
+        if (this.accounts[i].balance > large) {
+            large = this.accounts[i].balance;
+        }
+    }
+    return large;
+};
+
+Bank.prototype.avarage = function (){
+    return this.total() / this.accounts.length;
+};
+
+myBank = new Bank();
+
+myBank.addAccount("HSBC", 123);
+myBank.addAccount("TSB", 234);
+
+console.log(myBank);
+console.log("Total: " + myBank.total().toLocaleString("en-GB", {style: "currency", currency: "GBP"}));
+console.log("Largest: " + myBank.largest().toLocaleString("en-GB", {style: "currency", currency: "GBP"}));
+console.log("Avarage: " + myBank.avarage().toLocaleString("en-GB", {style: "currency", currency: "GBP"}));
+

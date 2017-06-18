@@ -11,3 +11,13 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
+
+function costSplitter (kettle, mugs) {
+    return ((3 * mugs) + kettle) / 3;
+}
+
+function report (kettle, mugs) {
+    console.log("Each should pay: " + costSplitter(kettle, mugs).toLocaleString("en-GB", {style: "currency", currency: "GBP"}));
+}
+
+report(10, 2);
