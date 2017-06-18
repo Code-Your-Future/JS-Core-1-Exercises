@@ -24,8 +24,9 @@ function removeVowels(alphabet) {
 
         }
     }
-    console.log(array_result);
+    return array_result;
 }
 var alphabet = ['A', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'b', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 removeVowels(alphabet);
+console.log(array_result);
