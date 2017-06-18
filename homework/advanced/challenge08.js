@@ -11,15 +11,13 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
-var totalPrice=0;
+var totalPrice = 0;
 var numberOfFriends = 3;
-var calculateBill = function(kettle, mug) {
-    
-totalPrice= (kettle+mug*3)
-    var contribute= totalPrice/numberOfFriends;
+var calculateBill = function (kettle, mug) {
+
+    totalPrice = (kettle + mug * 3)
+    var contribute = totalPrice / numberOfFriends;
     return contribute;
 }
-//console.log(calculateBill(kettle, mug));
-
-console.log(calculateBill(10,5));
-console.log(calculateBill(20,10));
+console.log(calculateBill(10, 5));
+console.log(calculateBill(20, 10));
