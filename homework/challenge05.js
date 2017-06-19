@@ -31,9 +31,7 @@ function stringy(size) {
         console.log();
     }
 }
-
-stringy(10);
-console.log(result);
+console.log(stringy(10));
 
 
 
