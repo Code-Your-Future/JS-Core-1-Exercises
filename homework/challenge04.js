@@ -24,9 +24,9 @@ function removevowel(string) {
 }
 var given_string = "My Name is YOHANNES!";
 removevowel(given_string);
-var given_string = ('goodbye');
+var given_string = 'goodbye';
 removevowel(given_string);
-var given_string = ('node girls');
+var given_string = 'node girls';
 removevowel(given_string);
-var given_string = ('how are you today?');
+var given_string = 'how are you today?';
 removevowel(given_string);
