@@ -31,42 +31,39 @@ var bank = {
     ],
 }
 
- function total() {
+function total() {
     var total = 0;
-        for (var i = 0; i < bank.acounts.length; i++) {
-            total += bank.acounts[i].balance;
-        }
-return total
+    for (var i = 0; i < bank.acounts.length; i++) {
+        total += bank.acounts[i].balance;
+    }
+    return total
 }
-  
+
 console.log(total())
 
- function Largest () {
-        var largest = 0;
-        for (var i = 0; i < bank.acounts.length; i++) {
-            if (largest < bank.acounts[i].balance) {
-                largest = bank.acounts[i].balance;
-            }
+function Largest() {
+    var largest = 0;
+    for (var i = 0; i < bank.acounts.length; i++) {
+        if (largest < bank.acounts[i].balance) {
+            largest = bank.acounts[i].balance;
         }
-       
-return largest
- }
-
- function  Average() {
-        var average = 0;
-        for (var i = 0; i < bank.acounts.length; i++) {
-           average += bank.acounts[i].balance;
-        }
-        return average/bank.acounts.length
+    }
+    return largest
 }
 
- function  Interest() {
-        var interest = 0;
-        for (var i = 0; i < bank.acounts.length; i++) {
-          return bank.acounts[i].balance = bank.acounts[i].balance*2;
-        }
+function Average() {
+    var average = 0;
+    for (var i = 0; i < bank.acounts.length; i++) {
+        average += bank.acounts[i].balance;
+    }
+    return average / bank.acounts.length
+}
 
-        
+function Interest() {
+    var interest = 0;
+    for (var i = 0; i < bank.acounts.length; i++) {
+        return bank.acounts[i].balance = bank.acounts[i].balance * 2;
+    }
 }
 console.log(Largest())
 console.log(Average())
