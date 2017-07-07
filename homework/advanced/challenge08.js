@@ -11,3 +11,17 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
+
+
+var totalPrice = 0;
+var mugsCost = 0;
+var price = function (mugCost, kettleCost) {
+    mugsCost = Math.abs(mugCost * 3);
+    totalPrice = mugsCost + Math.abs(kettleCost);
+    return Math.round(totalPrice / 3 * 100) / 100;
+}
+
+
+console.log(price(85, 3));
+console.log(price(-67, 2));
+console.log(price("s", 7));

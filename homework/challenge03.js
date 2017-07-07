@@ -15,4 +15,19 @@ findNeedle(haystack);
 Should return:
 
 'Found the needle at position 2'
+
 */
+
+
+
+
+var stuff = ['hay', 'rabbit', 'needle', 'hat']; // 
+// This arguments will be passed thought the function
+function findNeedle(haystack) {
+	for (var i = 0; i < haystack.length; i++) {
+		if (haystack[i] === 'needle') {
+			return 'Found the needle at position ' +  i
+		}
+	}
+}
+console.log( findNeedle(stuff));
