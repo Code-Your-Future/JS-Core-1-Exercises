@@ -15,7 +15,7 @@ shortcut('how are you today?') // --> "hw r y tdy?"
 var str = 'hello world';
 function removeVowels(pass) {
   newString = pass.replace(/[aeiou]/gi, '');
-  console.log(newString);
+  return newString;
 }
 
-removeVowels(str);
+console.log(removeVowels(str));

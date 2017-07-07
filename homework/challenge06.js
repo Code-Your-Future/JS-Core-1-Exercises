@@ -16,21 +16,22 @@ removeVowels(alphabet) // --> ['b', 'c', 'd', 'f', ... 'y', 'z']
 */
 
 
-
-// var result = [];
-// function removeVowels(alphabet) {
-// 	for (var i = 0; i < alphabet.length; i++) {
-// 		if (!((alphabet[i] === "o") || (alphabet[i] === "e") || (alphabet[i] === "a") || (alphabet[i] === "u") || (alphabet[i] === "i")
-// 			|| (alphabet[i] === "O") || (alphabet[i] === "E") || (alphabet[i] === "A") || (alphabet[i] === "U") || (alphabet[i] === "I")))            
-// 			array_result.push(alphabet[i]);	
-//             console.log(reuslt);
-// 	}	
-// }
-// var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'b', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-// removeVowels(alphabet);
+// Using A normal for loop
+var result = [];
+function removeVowels(alphabet) {
+	for (var i = 0; i < alphabet.length; i++) {
+		if (!((alphabet[i] === "o") || (alphabet[i] === "e") || (alphabet[i] === "a") || (alphabet[i] === "u") || (alphabet[i] === "i")
+			|| (alphabet[i] === "O") || (alphabet[i] === "E") || (alphabet[i] === "A") || (alphabet[i] === "U") || (alphabet[i] === "I")))            
+			array_result.push(alphabet[i]);	
+            console.log(reuslt);
+	}	
+}
+var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'b', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+removeVowels(alphabet);
 
 
 //********************************************************************************************************************** */
+// Using the filter function
 
 // var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'b', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 // var result = alphabet.filter(function(alphabets){
@@ -39,22 +40,22 @@ removeVowels(alphabet) // --> ['b', 'c', 'd', 'f', ... 'y', 'z']
 
 //********************************************************************************************************************** */
 
-// I have tired to achive the same result using map fucntion but it didn't work
+// Using the map function
 
-var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'b', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-var result = alphabet.map(function(alphabets){
-       if ((alphabets !== 'a' ) && (alphabets !== 'e' ) && (alphabets !== 'i' ) && (alphabets !== 'o' ) && (alphabets !== 'u' ) ){
-          return alphabets}
-    
-          else {alphabets ==="" }
-        } 
-          
-          ) 
+// var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'b', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+// var removeVowels = function (alphabet) {
+//   var result = [];
+//   alphabet.map(function (x) {
+//     if ((x !== 'a') && (x !== 'e') && (x !== 'i') && (x !== 'o') && (x !== 'u')) {
+//       return result.push(x)
+//     }
+//   })
+//   return result;
+// }
+// console.log(removeVowels(alphabet));
 
-           console.log(result)
-                                 
- 
-   
+
+
 
 
 
