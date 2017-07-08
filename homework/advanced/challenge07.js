@@ -21,3 +21,21 @@ The function should return how much each friend should contribute to the bill.
 
 **Extra credit**: How much should each friend pay if they want to add a 10% tip?
 */
+var bill = [7.99, 6.99, 14.99, 4.99];
+
+var numberOfFriends = 4;
+
+function payBill(bill, friends) {
+
+var total=0;
+
+  for (var i = 0; i < bill.length; i++) {
+  total+=bill[i]
+};
+var totalBill=total/friends
+return totalBill
+
+}
+
+var partBill = payBill(bill,numberOfFriends);
+console.log(partBill)

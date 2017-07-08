@@ -11,3 +11,12 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
+function oweMoney(kettlePrice,mugPrice){
+var total=kettlePrice+(3*mugPrice);
+var splitCost =total/3
+return splitCost;
+}
+//oweMoney (5,9);
+var suzieOwes = oweMoney(5,9)
+console.log(suzieOwes);
+

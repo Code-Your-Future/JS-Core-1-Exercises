@@ -84,13 +84,13 @@ var writers = [
 
 
 
-for(var i =0; i <writers.length; i++){
+for (var i = 0; i < writers.length; i++) {
 
-  if (writers[i].alive ===true) {
-    console.log('Hi my name is '  +  writers[i].firstName + ' ' + writers[i].lastName + ' I am  ' + writers[i].age +' years old ' + ' and work as a ' + writers[i].occupation );
-  }else{
-    console.log(writers[i].firstName  + ' is dead')
+  if (writers[i].alive === true) {
+    console.log('Hi my name is ' + writers[i].firstName + ' ' + writers[i].lastName + ' I am  ' + writers[i].age + ' years old ' + ' and work as a ' + writers[i].occupation);
+  } else {
+    console.log(writers[i].firstName + ' is dead');
   }
 
-  
+
 }
