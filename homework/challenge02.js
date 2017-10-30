@@ -21,3 +21,8 @@ Counting to 15 should look like this:
 'FizzBuzz'
 
 */
+//  for (var i=1; i<=100; i++){
+//   var modulo = i % 5;
+//   if (modulo === 0){
+//     console.log(i)
+//   }
