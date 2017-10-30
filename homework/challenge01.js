@@ -1,6 +1,8 @@
 /* Challenge 1: Famous Writers
 
-Did you know you can also have an array of objects? We've created one for you here. Loop through the array, and for each object, `console.log()` out the sentence:
+Did you know you can also have an array of objects? We've created one for you here. Loop 
+through the array,
+ and for each object, `console.log()` out the sentence:
 
 "Hi, my name is {firstName} {lastName}. I am {age} years old, and work as a {occupation}."
 
