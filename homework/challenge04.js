@@ -8,3 +8,9 @@ shortcut("goodbye")  // --> "gdby"
 shortcut("nodegirls")  // --> "nd grls"
 shortcut('how are you today?') // --> "hw r y tdy?"
 */
+
+function shortcut(x){
+        console.log(x.replace(/[aeouiy]/gi, ''));
+}
+
+shortcut("goodbye");
