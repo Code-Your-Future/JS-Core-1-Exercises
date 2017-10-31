@@ -21,3 +21,17 @@ The function should return how much each friend should contribute to the bill.
 
 **Extra credit**: How much should each friend pay if they want to add a 10% tip?
 */
+
+
+
+
+function splitBill(arr, people) {
+	var sum = arr.reduce(function(a,b){
+		return a + b;
+	},0);
+	var payForPerson = sum/people;
+	var tipForPerson = payForPerson * 0.1;
+	console.log("Payment for one friend is: " + payForPerson + ". Tip for one friend is: " + Math.round(tipForPerson)); // ROUNDED TIP
+}
+
+splitBill([7.99, 6.99, 14.99, 4.99],4);
