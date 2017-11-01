@@ -8,3 +8,13 @@ shortcut("goodbye")  // --> "gdby"
 shortcut("nodegirls")  // --> "nd grls"
 shortcut('how are you today?') // --> "hw r y tdy?"
 */
+
+
+
+function shortcut(str) {
+
+	console.log(str.replace(/a|e|i|o|u/gi, ""));
+}
+
+
+shortcut("Hello codeyourfuture");
