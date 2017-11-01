@@ -71,13 +71,17 @@ var writers = [
   },
 ];
 
+
+//part one start
 console.log("Base exercise");
 console.log("================================================");
 
-writers.forEach(function(writer) {
-  console.log("Hi, my name is " + writer.firstName + " " + writer.lastName + ". I am " + writer.age + " years old, and work as a " + writer.occupation);
+writers.forEach(function(anything) {
+  console.log("Hi, my name is " + anything.firstName + " " + anything.lastName + ". I am " + anything.age + " years old, and work as a " + anything.occupation);
 });
 
+
+//part two
 console.log("Advanced exercise");
 console.log("================================================");
 

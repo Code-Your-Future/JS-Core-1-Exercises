@@ -19,17 +19,17 @@ Should return:
 
 
 function findNeedle(array) {
-	//first way
-	console.log("Found the needle at position " + array.indexOf("needle"));
+	// //first way
+	// return "Found the needle at position " + array.indexOf("needle");
 
 	//second way
 	for (var i = 0; i <= array.length - 1; i++) {
 		if(array[i] === "needle") {
-			console.log("Found the needle at position " + i);
+			return "Found the needle at position " + i;
 		}
 	}
 }
 
 var haystack = ['hay', 'rabbit', 'needle', 'hat'];
 
-findNeedle(haystack);
+console.log(findNeedle(haystack));

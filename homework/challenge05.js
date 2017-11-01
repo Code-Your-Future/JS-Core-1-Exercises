@@ -21,17 +21,17 @@ function stringy(num) {
 			myString += "1";
 		}
 	}
-	console.log(myString);
+	return myString;
 		
 
 }
 
-stringy(6);
-stringy(5);
-stringy(7);
-stringy(8);
-stringy(9);
-stringy(10);
-stringy(11);
-stringy(12);
-stringy(122);
+console.log(stringy(5));
+console.log(stringy(6));
+console.log(stringy(7));
+console.log(stringy(8));
+console.log(stringy(9));
+console.log(stringy(10));
+console.log(stringy(11));
+console.log(stringy(12));
+console.log(stringy(1222324435));

@@ -27,7 +27,7 @@ function removeVowels() {
  		}
  	}
  }
- console.log(alphabet);
+ return alphabet;
 }
 
-removeVowels(alphabet);
+console.log(removeVowels(alphabet));
