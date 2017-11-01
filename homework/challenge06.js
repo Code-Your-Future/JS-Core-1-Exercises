@@ -31,7 +31,7 @@ var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p',
                  }
              }
          }
-         console.log(alphabet);
+         return alphabet;
         }
         
-        removeVowels(alphabet);
+     console.log(removeVowels(alphabet));

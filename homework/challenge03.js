@@ -20,16 +20,16 @@ Should return:
 var haystack = ['hay', 'rabbit', 'needle', 'hat'];
 function findNeedle(arr) {
 
-    console.log("Found the needle at position " + arr.indexOf("needle"))
+return "Found the needle at position " + arr.indexOf("needle");   
 
     for (var i = 0; i <= arr.length - 1; i++) {
 		if(arr[i] === "needle") {
-			console.log('Found the needle at position ' + i);
+			return 'Found the needle at position ' + i;
 		}
 }
 }
 
 
-findNeedle(haystack);
+console.log(findNeedle(haystack));
 
 // how about return....discuss with Eugen.
