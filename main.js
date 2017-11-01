@@ -37,19 +37,19 @@ if (isHappy === true) {
 // 	console.log(evenodd(i));
 // }
 
-// var number = -5;
+var number = -5;
 
-// if ((number%2) === 0 && number>0) {
-// 	console.log('positive even');
-// } else if ((number%2) === 0 && number<0) {
-// 	console.log('negative even');
-// } else if ((number%2) === 1 && number>0) {
-// 	console.log('positive odd');
-// } else if (number === 0) {
-// 	console.log ('Zero');
-// } else {
-// 	console.log('negative odd');
-// }
+if ((number%2) === 0 && number>0) {
+	console.log('positive even');
+} else if ((number%2) === 0 && number<0) {
+	console.log('negative even');
+} else if ((number%2) === 1 && number>0) {
+	console.log('positive odd');
+} else if (number === 0) {
+	console.log ('Zero');
+} else {
+	console.log('negative odd');
+}
 
 
 //  LOOP
