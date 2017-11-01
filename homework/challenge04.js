@@ -8,3 +8,10 @@ shortcut("goodbye")  // --> "gdby"
 shortcut("nodegirls")  // --> "nd grls"
 shortcut('how are you today?') // --> "hw r y tdy?"
 */
+
+function shortcut(aString) {
+    return aString.replace(/a|e|i|o|u/g, '');
+  }
+  console.log(shortcut('miran is a student'));
+  
+  

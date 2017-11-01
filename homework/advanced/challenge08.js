@@ -11,3 +11,10 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
+
+function price(katle, mugs){
+    return (katle+(mugs*3))/3;
+  }
+  console.log(price(60, 10));  
+  console.log(price(6, 11));
+  
