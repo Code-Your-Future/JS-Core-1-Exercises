@@ -11,3 +11,19 @@ stringy(5) // --> '10101'
 
 The size will always be positive and will only use whole numbers.
 */
+
+
+function stringy(num){
+    var output=""
+    for(i=1,i<=num,++i){
+        if (i%2==0){
+            output=output + "0";
+        }
+        else 
+            {output=output + "1";
+        }
+    }
+}
+console.log(output);
+
+stringy(8);
