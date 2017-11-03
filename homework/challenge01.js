@@ -76,8 +76,8 @@ var writers = [
 console.log("Base exercise");
 console.log("================================================");
 
-writers.forEach(function(anything) {
-  console.log("Hi, my name is " + anything.firstName + " " + anything.lastName + ". I am " + anything.age + " years old, and work as a " + anything.occupation);
+writers.forEach(function(array) {
+  console.log("Hi, my name is " + array.firstName + " " + array.lastName + ". I am " + array.age + " years old, and work as a " + array.occupation);
 });
 
 
