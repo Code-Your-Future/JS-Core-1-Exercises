@@ -132,8 +132,18 @@ removeVowels();
 console.log(alphabet);
 
 
+var bill = [7.99, 6.99, 14.99, 4.99];
+var numberOfFriends = 4;
+
+function evenlyCost(bill, numberOfFriends){
+        var total;
+        for(var billIndex = 0; billIndex < bill.length; billIndex++){
+                total += bill[billIndex];
+        }
+        console.log(total/numberOfFriends);
+}
 
 
-
+evenlyCost(bill, numberOfFriends);
 
 

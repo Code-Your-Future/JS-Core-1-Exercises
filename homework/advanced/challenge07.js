@@ -21,3 +21,28 @@ The function should return how much each friend should contribute to the bill.
 
 **Extra credit**: How much should each friend pay if they want to add a 10% tip?
 */
+
+var bill = [7.99, 6.99, 14.99, 4.99];
+var numberOfFriends = 4;
+var totalBill = 0;
+
+function eachFriendBill(bill, numberOfFriends){
+        for(var billIndex = 0; billIndex < bill.length; billIndex++){
+                totalBill += bill[billIndex];
+        }
+        console.log(totalBill/numberOfFriends);             /* or  return totalBill/numberOfFriends  in order to store this value */
+}
+
+eachFriendBill(bill, numberOfFriends);
+
+
+/***Extra credit**: How much should each friend pay if they want to add a 10% tip?*/
+
+function extraFriendBill(bill, numberOfFriends){
+        for(var billIndex = 0; billIndex < bill.length; billIndex++){
+                totalBill += bill[billIndex] * 0.1;        
+        }
+        console.log(totalBill/numberOfFriends);             /* or  return totalBill/numberOfFriends  in order to store this value */
+}
+
+extraFriendBill(bill, numberOfFriends);
