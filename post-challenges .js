@@ -176,4 +176,4 @@ function guestGame(arrNumber){
     }
 }
 
-guest([34, 45, 78,1003,46]);
+guestGame([34, 45, 78,1003,46]);
