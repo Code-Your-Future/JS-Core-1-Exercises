@@ -17,7 +17,31 @@ The second argument is the number of friends:
 
 var numberOfFriends = 4;
 
-The function should return how much each friend should contribute to the bill.
+The function should return how much each friend should contribute to the bill.*/
 
-**Extra credit**: How much should each friend pay if they want to add a 10% tip?
+function split(bill,numberofFrieds) {
+	var sum = 0;
+	for (i=0; i < bill.length; i++) {
+		sum += bill[i];
+		var sumEach = sum / numberofFrieds;
+	}
+	return (sumEach);
+}
+
+console.log(split([7.99, 6.99, 14.99, 4.99], 4));
+
+
+/*Extra credit**: How much should each friend pay if they want to add a 10% tip?
 */
+
+
+function split(bill,numberofFrieds) {
+	var sum = 0;
+	for (i=0; i < bill.length; i++) {
+		sum += bill[i];
+		var sumEach = sum*1.1 / numberofFrieds;
+	}
+	return (sumEach);
+}
+
+console.log(split([7.99, 6.99, 14.99, 4.99], 1));
