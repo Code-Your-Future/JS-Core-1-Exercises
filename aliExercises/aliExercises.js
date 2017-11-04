@@ -76,31 +76,57 @@ checkCityName("Kyiv");
 
 console.log("========Exercise #5===========");
 
+var cyfCities = ["London", "Manchester", "Glasgow"];
+
 function checkCity(array) {
-	for(var i = 0; i <= array.length - 1; i++) {
-		if(array[i] === "London" || array[i] === "Glasgow" || array[i] === "Manchester") {
-			console.log("Well done");
-		} else {
-			console.log("Not a CYF city, try again!");
+	var count = 0;
+	for(var i = 0; i < cyfCities.length; i++) {
+		for(var j = 0; j < array.length; j++) {
+			if(cyfCities[i] === array[j]) {
+				count += 1;
+			}
 		}
+	}
+
+	if(count === array.length) {
+		console.log("All cities in function argument are CYF cities");
+	} else if (count > 0) {
+		console.log("Some cities in function argument are CYF cities");
+	} else {
+		console.log("None of cities in function argument are CYF cities");
 	}
 }
 
 checkCity(["London", "New York", "Kyiv", "Edinburgh", "Manchester"]);
+checkCity(["London", "Glasgow", "Manchester"]);
+checkCity(["New York", "Kyiv", "Edinburgh"]);
 
 console.log("========Exercise #6===========");
 
+var cyfCities = ["London", "Manchester", "Glasgow"];
+
 function checkCityWithCaseType(array) {
-	for(var i = 0; i <= array.length - 1; i++) {
-		if(array[i].toLowerCase() === "London".toLowerCase() || array[i].toLowerCase() === "Glasgow".toLowerCase() || array[i].toLowerCase() === "Manchester".toLowerCase()) {
-			console.log("Well done");
-		} else {
-			console.log("Not a CYF city, try again!");
+	var count = 0;
+	for(var i = 0; i < cyfCities.length; i++) {
+		for(var j = 0; j < array.length; j++) {
+			if(cyfCities[i].toLowerCase() === array[j].toLowerCase()) {
+				count += 1;
+			}
 		}
+	}
+
+	if(count === array.length) {
+		console.log("All cities in function argument are CYF cities");
+	} else if (count > 0) {
+		console.log("Some cities in function argument are CYF cities");
+	} else {
+		console.log("None of cities in function argument are CYF cities");
 	}
 }
 
-checkCity(["London", "New York", "Kyiv", "Edinburgh", "Manchester"]);
+checkCityWithCaseType(["LONDON", "New York", "Kyiv", "Edinburgh", "MANCHESTER"]);
+checkCityWithCaseType(["London", "Glasgow", "MANCHESTER"]);
+checkCityWithCaseType(["New York", "Kyiv", "Edinburgh"]);
 
 
 console.log("========Exercise #7===========");
