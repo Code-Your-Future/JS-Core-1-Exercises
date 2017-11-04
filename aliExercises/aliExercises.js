@@ -141,3 +141,21 @@ function appendChar(string, repeatTimes, letter) {
 }
 
 appendChar('ello', 3, 'h');
+
+
+console.log("========Exercise #8===========");
+
+
+
+
+console.log("========Exercise #9===========");
+
+
+console.log("========Exercise #10===========");
+
+function reverseString(str) {
+	var reversedArray = str.split("").reverse();
+	console.log(reversedArray.join(""));
+}
+
+reverseString("hello world");
