@@ -37,7 +37,7 @@ let   writers= [{
 ];
 
 for(let i= 0; i<writers.length; i++){
-  console.log('Hi, my names is '+ writers[i].firstName +''+ writers[i].lastName+ '.'+ 'i am '+ writers[i].age+'year old'+ 'i work as '+ writers[i].occupation +'.');
+  console.log('Hi, my names is '+ writers[i].firstName +''+ writers[i].lastName+ '.'+ 'i am '+ writers[i].age  + ' ' +'year old'+ 'i work as '+ writers[i].occupation +'.');
 }
 
 
