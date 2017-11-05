@@ -8,3 +8,10 @@ shortcut("goodbye")  // --> "gdby"
 shortcut("nodegirls")  // --> "nd grls"
 shortcut('how are you today?') // --> "hw r y tdy?"
 */
+  
+
+Function shortCut(x);
+{
+    return x.replace('a|e|o|i|u' , '');
+}
+console.log(shortCut(mona));
