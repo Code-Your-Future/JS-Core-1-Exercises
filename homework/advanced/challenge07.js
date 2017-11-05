@@ -21,7 +21,7 @@ The function should return how much each friend should contribute to the bill.*/
 
 function split(bill,numberofFrieds) {
 	var sum = 0;
-	for (i=0; i < bill.length; i++) {
+	for (var i=0; i < bill.length; i++) {
 		sum += bill[i];
 		var sumEach = sum / numberofFrieds;
 	}

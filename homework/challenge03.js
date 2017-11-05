@@ -20,7 +20,7 @@ Should return:
 var haystack = ['hay', 'rabbit', 'needle', 'hat'];
 
 function findNeedle(haystack) {
-	for (i=0; i < haystack.length; i++) {
+	for (var i=0; i < haystack.length; i++) {
 		if (haystack[i] === 'needle') {
 			return ('Found the needle at position ' + [i]);
 		}

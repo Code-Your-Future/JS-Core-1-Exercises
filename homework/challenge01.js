@@ -39,7 +39,7 @@ var writers = [
   },
 ];
 
-for (i=0; i < writers.length; i++) {
+for (var i=0; i < writers.length; i++) {
   console.log ('Hi, my name is ' + (writers[i].firstName) + ' ' + (writers[i].lastName) + '. I am ' + (writers[i].age) +
    ' years old, and work as a ' + (writers[i].occupation) + '.');
 }
@@ -47,7 +47,7 @@ for (i=0; i < writers.length; i++) {
 /*If you want an extra challenge, only `console.log()` the writers that are alive.
 */
 
-for (i=0; i < writers.length; i++) {
+for (var i=0; i < writers.length; i++) {
   if (writers[i].alive === true) {
       console.log ('Hi, my name is ' + (writers[i].firstName) + ' ' + (writers[i].lastName) + '. I am ' + (writers[i].age) +
    ' years old, and work as a ' + (writers[i].occupation) + '.');

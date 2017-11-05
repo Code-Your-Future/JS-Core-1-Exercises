@@ -10,7 +10,7 @@ shortcut('how are you today?') // --> "hw r y tdy?"
 */
 
 function shortcut(str) {
-//	console.log(str.replace(/a|e|i|o|u/ ''));
+console.log(str.replace(/a|e|i|o|u/gi, ''));
 }
 
-shortcut('test');
+shortcut('atEste');
