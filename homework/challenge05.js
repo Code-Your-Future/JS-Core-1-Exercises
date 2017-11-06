@@ -15,7 +15,7 @@ console.log('== CHALLENGE 05 ==');
 
 function stringy(num) {
     var output = "";
-    for (i = 1; i <= num; i++) {
+    for (var i = 1; i <= num; i++) {
         if(i%2 === 0) {
             output = output + '0';
         }else {

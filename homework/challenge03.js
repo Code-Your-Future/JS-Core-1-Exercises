@@ -23,7 +23,7 @@ var haystack = ['hay', 'sweetcorn', 'hat', 'cat', 'dog', 'elephant', 'rice', 'wh
 function findNeedle(arr) {
     for (i = 0; i <= arr.length - 1; i++) {
         if(arr[i] === 'needle') {
-            console.log('Found the needle at position ' + (i + 1));
+            console.log('Found the needle at position ' + i);
         }
     }
 }

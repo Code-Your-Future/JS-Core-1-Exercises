@@ -21,3 +21,11 @@ The function should return how much each friend should contribute to the bill.
 
 **Extra credit**: How much should each friend pay if they want to add a 10% tip?
 */
+function each(bill, numberOfFriends){
+    var sum=0;
+    for(var i=0; i<bill.lenght; i++){
+        sum+=bill[1];
+    }
+    return sum/numberOfFriends;
+}
+console.log('sum')

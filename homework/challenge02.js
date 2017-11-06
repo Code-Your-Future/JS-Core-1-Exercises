@@ -21,7 +21,8 @@ Counting to 15 should look like this:
 'FizzBuzz'
 
 */
-console.log('== CHALLENGE 03 ==');
+console.log('== CHALLENGE 02 ==');
+
 for (var i=1; i<=100; i++) {
     	if(i % 3 === 0 && i % 5 === 0) {
     		console.log("Fizz,Buzz");

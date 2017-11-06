@@ -15,8 +15,7 @@ function shortcut(str) {
     var strSize = str.split('');
      return strSize.filter(function(el) {
         return vowels.indexOf(el.toLowerCase()) == -1;
-      }).join('');
+      }).join('x');
 }
 
-console.log(shortcut('I am called Mohsen Moradi.'));
-console.log(shortcut('Lorem ipsum dolor sit amet, consectetuer adipiscing elit, pretium quis, sem. Nulla consequat massa quis enim.'));
+console.log(shortcut('hay code your futur.'));
