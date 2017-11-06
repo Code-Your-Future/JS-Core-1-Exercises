@@ -4,8 +4,10 @@ Did you know you can also have an array of objects? We've created one for you he
 
 "Hi, my name is {firstName} {lastName}. I am {age} years old, and work as a {occupation}."
 
-Here is the array:
+*/
 
+
+//Here is the array:
 var writers = [
   {
     firstName: "Virginia",
@@ -36,6 +38,21 @@ var writers = [
     alive: true
   },
 ];
+console.log('========================== CHALENGE 01 ============================');
+writers.forEach(function(aryItem) {
+  console.log('Hi, my name is ' +aryItem.firstName + ' ' + aryItem.lastName + '. I am ' + aryItem.age + ' years old, and work as a ' + aryItem.occupation + '.');
+});
 
-If you want an extra challenge, only `console.log()` the writers that are alive.
-*/
+//If you want an extra challenge, only `console.log()` the writers that are alive.
+
+console.log('The only writers who are alive are:');
+
+writers.forEach(function(aryItem) {
+  if (aryItem.alive) {
+  console.log(
+     aryItem.firstName + ' ' + aryItem.lastName 
+  );
+  }
+});
+
+

@@ -16,3 +16,25 @@ Should return:
 
 'Found the needle at position 2'
 */
+
+console.log('======================= CHALLENGE 03 ==============================');
+
+var haystack = ['hay', 'sweetcorn', 'hat', 'cat', 'dog', 'elephant', 'rice', 'wheet', 'bus', 'needle', 'London' ];
+// longer method
+function findNeedle(arr) {
+    for (i = 0; i <= arr.length - 1; i++) {
+        if(arr[i] === 'needle') {
+            console.log('Found the needle at position ' + (i + 1));
+        }
+    }
+}
+
+findNeedle(haystack);
+
+// Shorter way 
+
+function findNeedle(arry) {
+    console.log('found the needle at position ' + arry.indexOf('needle'));
+}
+
+findNeedle(haystack);
