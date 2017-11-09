@@ -16,3 +16,37 @@ e.g you can add interest to all of your accounts.
 
 
 */
+
+var bank = {
+	accounts: [
+		{
+			propertyName: "House",
+			balance: 300
+		},
+		{
+			propertyName: "Appartment",
+			balance: 200
+		},
+		{
+			propertyName: "Shop",
+			balance: 700
+		}
+	],
+	total: function(){
+		return this.accounts[0].balance + this.accounts[1].balance + this.accounts[2].balance;
+	},
+	largest: function(){
+		var allBalancies = [];
+		this.accounts.forEach(function(el){
+			allBalancies.push(el.balance);
+		});
+		return allBalancies.sort(function(a, b){return b - a})[0];
+	},
+	average: function(){
+		return (this.accounts[0].balance + this.accounts[1].balance + this.accounts[2].balance) / 3;
+	}
+}
+
+console.log(bank.total());
+console.log(bank.largest());
+console.log(bank.average());

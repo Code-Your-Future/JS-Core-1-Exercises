@@ -11,3 +11,17 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
+
+
+// 3 girls: nadia, suzie, katrina
+// 1 kettle
+// 3 mugs
+// kettle price / 3
+
+
+function payBack(kettlePrice, mugPrice) {
+	return (kettlePrice + mugPrice * 3) / 3 
+
+}
+
+console.log("Suzie owe to Katrina: " + payBack(15, 5) + "$");
