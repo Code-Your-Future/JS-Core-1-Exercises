@@ -82,12 +82,19 @@ var bottle = {
 		} else {
 			return false;
 		}
+	},
+	doubleDrink: function(vol){
+		this.volume -= vol;
+
 	}
 }
 
 bottle.fill();
+console.log(bottle.volume);
+bottle.doubleDrink(40);
+console.log(bottle.volume);
 bottle.drink();
 bottle.drink();
 bottle.drink();
 
-console.log(bottle.volume);
+// console.log(bottle.volume);

@@ -88,7 +88,7 @@ function checkCity(array) {
 		}
 	}
 
-	if(count === array.length) {
+	if(count === array.lengt)h {
 		console.log("All cities in function argument are CYF cities");
 	} else if (count > 0) {
 		console.log("Some cities in function argument are CYF cities");
@@ -159,3 +159,6 @@ function reverseString(str) {
 }
 
 reverseString("hello world");
+
+
+
