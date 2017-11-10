@@ -88,6 +88,51 @@ whereToFindCyf('Malabo');
 whereToFindCyf('Glascow');
 
 /* ************************************************************************************************************************
+                                                   Another method
+*************************************************************************************************************************/
+
+function whereToFindCyfArr(cityName){
+    var cyfCities = ['London', 'Glascow', 'Manchester'];
+    for (var cyfCitiesIndex = 0; cyfCitiesIndex < cyfCities.length; cyfCitiesIndex++){
+        if(cityName.indexOf(cyfCitiesIndex) !== -1){
+            console.log('yes');
+        } 
+            
+    }
+}  
+
+   whereToFindCyfArr(['Glascow', 'malabo', 'Manchester', 'Paris', 'London', 'Marseille', 'Lyon']);       
+
+
+/* ************************************************************************************************************************
+                                                   Another method
+*************************************************************************************************************************/
+   
+
+function whereToFindCyf(cityName){
+    var cyfCities = ['London', 'Glasgow', 'Manchester'];
+    var city = false;
+    cyfCities.forEach(function(item){
+        if(cityName === item){
+            return city = true;
+        }  
+    });
+    if(city){
+        console.log('Well done! ' + cityName + ' is one of the Code Your Future cities');
+    }else {
+        console.log(cityName + ' is not a CYF city, try again!');    
+    }
+}
+
+whereToFindCyf('Yaounde');
+whereToFindCyf('Manchester');
+whereToFindCyf('Malabo');
+whereToFindCyf('Glasgow');
+
+
+
+
+/* ************************************************************************************************************************
 5-Extend the function from Exercise 4 by copy/pasting it to a new function. 
 The new function should take an array of city names and checks if all of them are CYF cities, 
 some of them are CYF cities or none of them are CYF cities (Hint: use a loop).
@@ -107,7 +152,62 @@ function whereToFindCyfArr(cityName){
     }
 }  
 
-   whereToFindCyfArr(['Glascow', 'malabo', 'Manchester', 'Paris', 'London', 'Marseille', 'Lyon']);       
+   whereToFindCyfArr(['Glascow', 'malabo', 'Manchester', 'Paris', 'London', 'Marseille', 'Lyon']);  
+
+   
+   /* ************************************************************************************************************************
+                                                   Another method
+*************************************************************************************************************************/
+
+
+function whereToFindCyf(cityName){
+    var matchCities = [];
+    var cyfCities = ['London', 'Glasgow', 'Manchester'];
+    for (var i = 0; i < cyfCities.length; i++){
+        for (var j = 0; j < cityName.length; j++){
+            if (cityName[j] === cyfCities[i]){
+                matchCities.push(cityName[j]);
+            }
+        } 
+    }   if (matchCities.length === cyfCities.length && cityName.length === cyfCities.length){
+            console.log('Yes all!');
+        } else if ( matchCities.length <= cyfCities.length  && matchCities.length > 0){
+            console.log('Yes some!');
+        } else {
+            console.log('None!');
+        } 
+}
+
+whereToFindCyf(['Glasgow', 'Malabo', 'Kolofata', 'Manchester', 'Paris', 'London', 'Marseille', 'Lyon']);
+
+
+
+   /* ************************************************************************************************************************
+                                                   Another method
+*************************************************************************************************************************/
+
+
+function whereToFindCyfArr(cityName){
+    var cyfCities = ['London', 'Glascow', 'Manchester'];
+    
+    function targetCityName(theTarget){
+        return cyfCities.indexOf(theTarget) === -1;
+    }
+    
+    var filtered = cityName.filter(targetCityName);
+    console.log(filtered);
+    
+    if (filtered.length === cityName.length){
+        console.log('None');
+    }   else if (filtered.length === 0){
+        console.log('All');
+    }   else {
+        console.log('Some');
+    }
+}
+
+whereToFindCyfArr(['Glascow', 'Malabo', 'Manchester', 'Paris', 'London', 'Marseille', 'Lyon']);  
+
    
    /* ************************************************************************************************************************
 6-Extend the function from Exercise 5 by copy/pasting it to a new function. 
@@ -177,3 +277,19 @@ function guestGame(arrNumber){
 }
 
 guestGame([34, 45, 78,1003,46]);
+
+
+
+/* ************************************************************************************************************************
+10.Write a function which reverses the string given as an argument.
+*************************************************************************************************************************/
+
+function reverse (str){
+    var anotherString = '';
+    for(i = str.length - 1; i >= 0; i-- ){
+        anotherString += str[i];
+    }
+    console.log(anotherString);
+}
+
+reverse ('code your future');
