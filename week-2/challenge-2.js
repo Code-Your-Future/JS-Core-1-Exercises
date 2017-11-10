@@ -28,6 +28,7 @@ function pascal (num) {
 console.log(pascal(6));
 
 
+
 // function pascal(num1, num2) {
 //   if (num2 < 0 || num2 > num1) {
 //       return 0;

@@ -17,3 +17,4 @@ function mySort(array) {
 var numbers = [12, 10, 15, 11, 14, 13, 16];
 mySort(numbers);
 console.log(numbers);
+

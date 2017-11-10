@@ -29,3 +29,5 @@ function flatSort(array) {
 function secondFlatSort(array) {	
 }
 flatSort(myArray);
+
+
