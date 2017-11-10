@@ -9,6 +9,7 @@ Desired Output; [ 10, 11, 12, 13, 14, 15, 16 ]
 */
 
 function mySort(array) {
+  numbers.sort(function(a, b){return a-b});
 
   return array;
 }
