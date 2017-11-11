@@ -10,7 +10,26 @@ Desired Output;
 */
 
 var myArray = [
-  [ 1, 2, 5, 7],
-  [ 8, 9, 12, 15],
-  [ 20, 30, 50, 72, 81]
+    [1, 2, 5, 7],
+    [8, 9, 12, 15],
+    [20, 30, 50, 72, 81]
 ];
+
+function flatternAndSort(arr) {
+    var newArr = [];
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < arr[i].length; j++) {
+            newArr.push(arr[i][j]);
+        }
+    }
+    var result = newArr.sort(function(a, b) {
+        return a - b;
+    });
+    console.log(result);
+}
+flatternAndSort([
+    [29, 45, 645, ],
+    [37, 90, 23, 93, 11],
+    [28, 96, 13]
+]);
+flatternAndSort(myArray);
