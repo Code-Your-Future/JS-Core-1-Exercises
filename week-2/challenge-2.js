@@ -1,20 +1,26 @@
-/**
-
-Cre­ate a pascal’s tri­an­gle using javascript.
-
-http://www.mathsisfun.com/pascals-triangle.html
 
 
-- Pascal’s tri­an­gle can be sim­u­lated using 2-D array
-- While cre­at­ing 2-D array
-- If the ele­ment is the either first or last ele­ment then ini­tial­ize it with 1
-- Else ini­tial­ize it with the sum of the ele­ments from pre­vi­ous row
+function PascalTriangleOf(x) {
+  var myArr = [];
+  for(var row = 0; row < x; row++) {
+      myArr[row] = [];
+      for(var col = 0; col < row+1; col++) {
+          if(col === 0 || col === row) {
+              myArr[row][col] = 1;
+          } else {
+              myArr[row][col] = myArr[row-1][col-1] + myArr[row-1][col];
+          }         
+      }       
+  }   
 
-*/
+  for (i = 0; i < myArr.length; i++) {
+    console.log(myArr[i].join(' '));
+  }
 
-function pascal(num) {
-  // TODO
   
 }
 
-console.log(pascal(5));
+
+PascalTriangleOf(10);
+
+

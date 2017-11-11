@@ -21,3 +21,26 @@ Counting to 15 should look like this:
 'FizzBuzz'
 
 */
+
+
+for(var i=1; i <= 200; i++ ) {
+    var j = i % 3;
+    var k = i % 5;
+
+    if (j == 0 && k == 0) {
+        console.log("FizzBuzz");
+    }
+    else if(j == 0) {
+        console.log("Fizz");
+    }
+
+    else if (k == 0) {
+        console.log("Buzz");
+    }
+
+    
+
+    else {
+        console.log(i)
+    }
+}
