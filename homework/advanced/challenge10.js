@@ -64,12 +64,15 @@ var athlete = {
 			this.hydLevel += 10;
 			bottle.volume -= 10;	
 		}
-	},
+	}
 }
 
 athlete.run();
+console.log(athlete.run());
 athlete.run();
+console.log(athlete.run());
 athlete.run();
+console.log(athlete.run());
 
 
 console.log(athlete.hydLevel);
