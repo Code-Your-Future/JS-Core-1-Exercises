@@ -26,28 +26,3 @@ function mySort(array) {
 var numbers = [12, 10, 15, 11, 14, 13, 16];
 mySort(numbers);
 console.log(numbers);
-
-/* ************************************************************************************************************************
-                                                   Another method
-*************************************************************************************************************************/
-
-function flatternAndSort(myArray) {
-    var myNewArray = myArray.reduce(function(prev, curr) {
-        return prev.concat(curr);
-    });
-    console.log(myNewArray);
-}
-var numbers = [12, 10, 15, 11, 14, 13, 16];
-mySort(numbers);
-
-/* ************************************************************************************************************************
-                                                   Another method
-*************************************************************************************************************************/
-
-function flatternAndSort(myArray) {
-    var myNewArray = [].concat.apply([], myArray);
-    console.log(myNewArray);
-}
-
-var numbers = [12, 10, 15, 11, 14, 13, 16];
-mySort(numbers);
