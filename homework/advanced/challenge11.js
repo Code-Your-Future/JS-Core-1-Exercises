@@ -16,3 +16,41 @@ e.g you can add interest to all of your accounts.
 
 
 */
+
+var bank = {
+	accounts: [
+		{
+			name: "Robertson",
+			balance: 2594,
+		},
+		{
+			name: "Wall",
+			balance: 9974,
+		}
+		],
+	total: function() {
+		var totalBalance = 0; 
+		for (var i = 0; i < this.accounts.length; i++) {
+			totalBalance += this.accounts[i].balance;
+		}
+		return totalBalance;
+	},
+	largest: function() {
+		for (var i =0; i < this.accounts.length; i++) {
+			var max = Math.max(this.accounts[i].balance);
+		}
+		return max;
+	},
+	average: function() {
+		var totalBalance = 0; 
+		for (var i = 0; i < this.accounts.length; i++) {
+			totalBalance += this.accounts[i].balance;
+			var average = totalBalance / (i+1);
+		}
+		return average;
+	}
+}
+
+console.log(bank.total());
+console.log(bank.largest());
+console.log(bank.average());

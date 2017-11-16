@@ -11,3 +11,20 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
+
+//BOTH OF THE GIRLS OWE NADIA
+
+function oweEach (kettle,mug) {
+	var sumOwe = (kettle + mug * 3)/3;
+	return sumOwe;
+}
+
+console.log('Each girl owes Nadia ' + oweEach(5,2));
+
+
+function oweTotal (kettle,mug) {
+	var sumOwe = (kettle + mug * 3)/3*2;
+	return sumOwe;
+}
+
+console.log('Both girls owe Nadia' + oweTotal(5,2));
