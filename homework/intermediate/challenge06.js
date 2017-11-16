@@ -14,3 +14,20 @@ Running your function by passing in `alphabet` should give you an array of all c
 removeVowels(alphabet) // --> ['b', 'c', 'd', 'f', ... 'y', 'z']
 
 */
+
+ // <.............................ANSWERS......................../>
+
+
+
+var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'b', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var vowels = ['a', 'e', 'i', 'o', 'u', 'y'];
+function removeVowels() {
+for(var i = 0; i < alphabet.length; i++){
+for(var j = 0; j < vowels.length; j++)
+if(vowels[j] ===  alphabet[i]){
+alphabet.splice(i, 1);
+}
+}
+
+removeVowels();
+console.log( alphabet());
