@@ -12,9 +12,25 @@ http://www.mathsisfun.com/pascals-triangle.html
 
 */
 
-function pascal(num) {
-  // TODO
-  
+function pascal(arr) {
+    // TODO
+    var newArr = [];
+    for (var i = 0; i <= arr - 1; i++) {
+        newArr[i] = [];
+        for (var j = 0; j <= i; j++) {
+            if (j === 0 || j === i) {
+                newArr[i][j] = 1;
+            } else {
+                newArr[i][j] = newArr[i - 1][j - 1] + newArr[i - 1][j];
+            }
+        }
+    }
+    console.log(newArr);
 }
 
-console.log(pascal(5));
+pascal(5);
+
+
+pascal(8);
+
+pascal(17);
