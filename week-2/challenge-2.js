@@ -25,7 +25,7 @@ function pascal (num) {
   }
   return triangle;
 }
-console.log(pascal(6));
+console.log(pascal(5));
 
 
 
