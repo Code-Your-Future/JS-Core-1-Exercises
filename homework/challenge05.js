@@ -11,3 +11,13 @@ stringy(5) // --> '10101'
 
 The size will always be positive and will only use whole numbers.
 */
+
+function stringy(s) {
+        var a = '';
+        for (var i = 1; i <= s; i++)  {
+                a += i % 2;
+        } 
+        return a;
+}
+var b = stringy(5);
+console.log(b);

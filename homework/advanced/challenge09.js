@@ -64,3 +64,38 @@ if(!bottle.empty()){
 70
 
 */
+
+var bottle = {
+      volume: 0,
+      fill: function(){
+            this.volume = 100; 
+      },
+      drink: function(){
+            // calling this function should decrease your bottles volume by 10;
+            if(bottle.volume > 0){
+                  this.volume -= 10;
+                  console.log('bottles volume = ' + bottle.volume);
+            }
+      },
+      empty: function(){
+            // this function should return true if your bottles volumn = 0
+            if(bottle.volume === 0){
+                  return true;
+            }else{
+                  return false;
+            }
+      }
+}
+
+bottle.fill();
+bottle.drink();
+bottle.drink();
+bottle.drink();
+
+
+
+
+
+
+
+
