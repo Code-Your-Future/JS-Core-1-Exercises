@@ -11,3 +11,13 @@ mugs, then return the value Suzie owes.
 
 Test your function with different prices to see if it works.
 */
+var kettleCost = 14.99;
+var mugCost = 1.49;
+function suzieOrKarinaOwe() {
+  return (kettleCost + mugCost * 3) / 3;
+}
+console.log(
+  "Katrina or Suzie has to pay to Nadia :",
+  Math.round(suzieOrKarinaOwe() * 100) / 100,
+  "pound"
+);

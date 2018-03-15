@@ -21,3 +21,38 @@ The function should return how much each friend should contribute to the bill.
 
 **Extra credit**: How much should each friend pay if they want to add a 10% tip?
 */
+var bill = [
+  {
+    foodName: "Spaghetti",
+    howMany: 1,
+    cost: 7.99
+  },
+  {
+    foodName: "Soup",
+    howMany: 1,
+    cost: 6.99
+  },
+  {
+    foodName: "Sandwich",
+    howMany: 2,
+    cost: 14.99
+  },
+  {
+    foodName: "Coke",
+    howMany: 3,
+    cost: 4.99
+  }
+];
+var numberOfFriends = 4;
+function howManyPay(num, bill) {
+  var total = 0;
+  for (i = 0; i < bill.length; i++) {
+    total = total + bill[i].howMany * bill[i].cost;
+  }
+  return total / num;
+}
+console.log("Each firend have to pay : ", howManyPay(numberOfFriends, bill));
+console.log(
+  "Each firend have to pay for tip: ",
+  howManyPay(numberOfFriends, bill) / 10
+);
