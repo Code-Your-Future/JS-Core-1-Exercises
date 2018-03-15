@@ -14,3 +14,45 @@ Running your function by passing in `alphabet` should give you an array of all c
 removeVowels(alphabet) // --> ['b', 'c', 'd', 'f', ... 'y', 'z']
 
 */
+var vowels = ["a", "e", "i", "o", "u"];
+
+var alphabet = [
+  "a",
+  "b",
+  "c",
+  "d",
+  "e",
+  "f",
+  "g",
+  "h",
+  "i",
+  "j",
+  "k",
+  "l",
+  "m",
+  "n",
+  "o",
+  "p",
+  "q",
+  "r",
+  "s",
+  "t",
+  "u",
+  "w",
+  "x",
+  "v",
+  "y",
+  "z"
+];
+function removeVowels(array) {
+  var cash = array.slice();
+  for (i = 0; i < cash.length; i++) {
+    if (vowels.indexOf(cash[i]) >= 0) {
+      cash.splice(i, 1);
+      i--;
+    }
+  }
+  return cash;
+}
+var consonants = removeVowels(alphabet);
+console.log(consonants);

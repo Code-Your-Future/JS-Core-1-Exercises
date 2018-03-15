@@ -4,7 +4,7 @@ Did you know you can also have an array of objects? We've created one for you he
 
 "Hi, my name is {firstName} {lastName}. I am {age} years old, and work as a {occupation}."
 
-Here is the array:
+Here is the array:*/
 
 var writers = [
   {
@@ -34,8 +34,20 @@ var writers = [
     occupation: "writer",
     age: 64,
     alive: true
-  },
+  }
 ];
-
+var i = 3;
+console.log(
+  "Hi, my name is ",
+  writers[i].firstName,
+  " ",
+  writers[i].lastName,
+  ". I am ",
+  writers[i].age,
+  " years old, and work as a ",
+  writers[i].occupation,
+  "."
+);
+/*
 If you want an extra challenge, only `console.log()` the writers that are alive.
 */

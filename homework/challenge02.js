@@ -21,3 +21,20 @@ Counting to 15 should look like this:
 'FizzBuzz'
 
 */
+
+function fizzBuzz() {
+  var game = [];
+  for (i = 1; i <= 100; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      game[i - 1] = "FizzBuzz";
+    } else if (i % 3 === 0) {
+      game[i - 1] = "Fizz";
+    } else if (i % 5 === 0) {
+      game[i - 1] = "Buzz";
+    } else {
+      game[i - 1] = i;
+    }
+  }
+  return game;
+}
+console.log(fizzBuzz());
