@@ -9,7 +9,7 @@ Desired Output; [ 10, 11, 12, 13, 14, 15, 16 ]
 */
 
 function mySort(array) {
-
+  array.sort((a, b) => a - b);
   return array;
 }
 
